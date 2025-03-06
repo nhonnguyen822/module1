@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1:hover,.div2:hover,.div3:hover,.div4:hover,.div5:hover,.div6:hover{background-color: yellowgreen}
+        .div1{height: 80px}
+        .div2{height: 80px}
+        .div3{height: 170px}
+        .div4{height: 120px}
+        .div5{height: 120px}
+        .div6{height: 100px}
+    </style>
+</head>
+<body>
+<div>
+  <form>
+      <h2>Market Research Survey</h2>
+      <p>Please take a few moments to complete this satisfaction survey.</p>
+      <div class="div1">
+          <h4>What is your age range?</h4>
+          <select style="width:500px;height: 30px">
+              <option value="">18-24</option>
+              <option>25-34</option>
+              <option>35-50</option>
+              <option>50+</option>
+          </select>
+      </div>
+      <div class="div2">
+          <h4>What is your yearly income range?</h4>
+          <select style="width:500px;height: 30px">
+              <option value="">$0-$25000</option>
+              <option>$25000-$50000</option>
+              <option>$50000-$100000</option>
+              <option>$100000+</option>
+          </select>
+      </div>
+      <div class="div3">
+          <h4>Gender Identity</h4>
+          <input type="radio" name="male" input="Male">Male<br>
+          <input type="radio" name="male" input="Female">Female<br>
+          <input type="radio" name="male" input="Nonbinary">Nonbinary<br>
+          <input type="radio" name="male" input="Other">Other<br>
+          <input type="text" name="gioitinh" input=""><br>
+          <span>Maximum of 250 characters. </span>
+          <span>Currently Used: 0 characters.</span>
+      </div>
+      <div class="div4">
+          <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+          <input type="checkbox" name="Product1" input="Product 1">Product 1<br>
+          <input type="checkbox" name="Product2" input="Product 2">Product 2<br>
+          <input type="checkbox" name="Product3" input="Product 3">Product 3
+      </div>
+      <div class="div5">
+          <h4>How often would you use our new product?</h4>
+          <input type="radio" name="product" input="Daily">Daily<br>
+          <input type="radio" name="product" input="Weekly">Weekly<br>
+          <input type="radio" name="product" input="Monthly">Monthly<br>
+      </div>
+      <div class="div6">
+          <h4>What would you pay for the new product?</h4>
+          <div style="display: inline-flex;justify-content: space-between;width: 150px">
+              <span>$ </span>
+              <div>
+                  <input type="number" name="dollar" value="" style="width:70px">
+                  <p>Dollars</p>
+              </div>
+              <span>-</span>
+              <div>
+                  <input type="number" name="dollar" value="" style="width:20px">
+                  <p>Cents</p>
+              </div>
+          </div>
+
+      </div>
+  </form>
+</div>
+</body>
+</html>
