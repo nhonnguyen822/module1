@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_co_ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_co_ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_dang_ky.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_dang_ky.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_lay_survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_lay_survey.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -74,6 +78,14 @@
       <workItem from="1741176687434" duration="9638000" />
       <workItem from="1741223394594" duration="92000" />
       <workItem from="1741223487989" duration="18598000" />
+      <workItem from="1741246122505" duration="6602000" />
+      <workItem from="1741255517620" duration="553000" />
+      <workItem from="1741310223965" duration="7177000" />
+      <workItem from="1741328722828" duration="8937000" />
+      <workItem from="1741354793117" duration="7913000" />
+      <workItem from="1741407666729" duration="15344000" />
+      <workItem from="1741426403548" duration="6589000" />
+      <workItem from="1741435696749" duration="7180000" />
     </task>
     <servers />
   </component>

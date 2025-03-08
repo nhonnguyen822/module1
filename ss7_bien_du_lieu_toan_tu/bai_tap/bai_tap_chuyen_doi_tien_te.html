@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div><p>Amount</p>
+        <input type="number" id="Amount"></div>
+    <div><p>From Currency</p>
+        <select id="fistchange">
+            <option value="1">VN</option>
+            <option value="23000">USD</option>
+        </select></div>
+    <div><p>To Currency</p>
+        <select id="lastchange">
+            <option value="1">VN</option>
+            <option value="23000">USD</option>
+        </select></div>
+    <button onclick="change()">Convert</button>
+    <p id="result"></p>
+</div>
+</body>
+<script>
+    function change() {
+        let amount =parseFloat(document.getElementById("Amount").value) ;
+        let fish = parseFloat(document.getElementById("fistchange").value);
+        let last = parseFloat(document.getElementById("lastchange").value);
+        let change=(amount*fish)/last;
+        if(last===23000){ document.getElementById(id="result").innerText="Result:"+change+"$"}else{
+            document.getElementById(id="result").innerText="Result:"+change+"VND"
+        }
+    }
+</script>
+</html>

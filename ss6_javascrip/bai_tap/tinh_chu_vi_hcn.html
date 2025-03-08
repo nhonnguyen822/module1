@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" placeholder="nhap chieu dai">
+<input id="b" placeholder="nhap chieu rong">
+<button onclick="chuViC()">TinhC</button>
+<button onclick="dienTichS()">TinhS</button>
+<p id="kq"></p>
+</body>
+<script>
+    function chuViC() {
+        let chieuDai = parseFloat(document.getElementById('a').value);
+        let chieuRong = parseFloat(document.getElementById('b').value);
+        let c = (chieuDai + chieuRong) * 2;
+        document.getElementById('kq').innerHTML = "Ket qua:" + c;
+    }
+
+    function dienTichS() {
+        let chieuDai = document.getElementById('a').value;
+        let chieuRong = document.getElementById('b').value;
+        let s = chieuDai * chieuRong;
+        document.getElementById('kq').innerText = "Ket qua:" + s;
+    }
+</script>
+</html>
