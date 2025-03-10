@@ -5,31 +5,51 @@
     <title>Title</title>
 </head>
 <body>
-<div>
+<div style="width: 220px;height: 250px; background-color: skyblue;padding:5px 0 20px 20px">
     <div><p>Amount</p>
-        <input type="number" id="Amount"></div>
+        <input type="number" id="amount"></div>
     <div><p>From Currency</p>
-        <select id="fistchange">
+        <select id="fistChange" style="width: 170px">
             <option value="1">VN</option>
             <option value="23000">USD</option>
+            <option value="4.408">BRL</option>
+            <option value="17767">CAD</option>
         </select></div>
     <div><p>To Currency</p>
-        <select id="lastchange">
+        <select id="lastChange" style="width: 170px">
             <option value="1">VN</option>
             <option value="23000">USD</option>
+            <option value="4408">BRL</option>
+            <option value="17767">CAD</option>
         </select></div>
-    <button onclick="change()">Convert</button>
-    <p id="result"></p>
+    <div style="margin-top:20px ">
+        <button onclick="change()">Convert</button>
+    </div>
+    <p id="result" style="margin-top:20px "></p>
 </div>
 </body>
 <script>
     function change() {
-        let amount =parseFloat(document.getElementById("Amount").value) ;
-        let fish = parseFloat(document.getElementById("fistchange").value);
-        let last = parseFloat(document.getElementById("lastchange").value);
-        let change=(amount*fish)/last;
-        if(last===23000){ document.getElementById(id="result").innerText="Result:"+change+"$"}else{
-            document.getElementById(id="result").innerText="Result:"+change+"VND"
+        let amount = parseFloat(document.getElementById("amount").value);
+        let fish = parseFloat(document.getElementById("fistChange").value);
+        let last = parseFloat(document.getElementById("lastChange").value);
+        let change = (amount * fish) / last;
+        // if(last===23000){ document.getElementById("result").innerText="Result:"+change+"$"}else{
+        //     document.getElementById("result").innerText="Result:"+change+"VND"
+        // }
+        switch (last) {
+            case 23000:
+                document.getElementById("result").innerText = "result: " + change.toFixed(4)
+                break;
+            case 1:
+                document.getElementById("result").innerText = "result: " + change.toFixed(4)
+                break;
+            case 4408:
+                document.getElementById("result").innerText = "result :" + change.toFixed(4)
+                break;
+            case 17767:
+                document.getElementById("result").innerText = "result :" + change.toFixed(4)
+                break;
         }
     }
 </script>

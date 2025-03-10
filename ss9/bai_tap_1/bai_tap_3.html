@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button{
+            width: 40px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 200px;height: 180px;background-color:cornflowerblue;border-radius: 5px;padding:5px;" >
+    <table>
+        <tr>
+            <th colspan="4"><input id="input" style="height: 30px"></th>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="sub(this.value)" value="1" >1</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="2">2</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="3">3</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="+">+</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <button onclick="sub(this.value)" value="4">4</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="5">5</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="6">6</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="-">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="sub(this.value)" value="7">7</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="8">8</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="9">9</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="*">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="reset()" value="C">C</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="0">0</button>
+            </td>
+            <td>
+                <button onclick="result()" value="=">=</button>
+            </td>
+            <td>
+                <button onclick="sub(this.value)" value="/">/</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+<script>
+    let enter = document.getElementById("input");
+    enter.value = "0"
+
+    function sub(value) {
+        let enter = document.getElementById("input");
+        let operator = "+-*/"
+        if (enter.value == "0" && !operator.includes(value)) {
+            enter.value = value
+        } else {
+            if (operator.includes(enter.value.slice(-1)) && operator.includes(value)) {
+                return;
+            } else {
+                enter.value += value
+            }
+        }
+    }
+
+    function result() {
+        enter.value = eval(enter.value);
+    }
+
+    function reset() {
+        enter.value=enter.value.slice(0,-1);
+        if (enter.value===""){ enter.value="0"}
+    }
+</script>
+</html>

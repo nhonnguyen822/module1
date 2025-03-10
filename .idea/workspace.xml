@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_co_ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_co_ban.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_dang_ky.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_dang_ky.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_lay_survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/bai_tap_ss5/bai_tap_form_lay_survey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_du_lieu_toan_tu/bai_tap/bai_tap_chuyen_doi_tien_te.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_du_lieu_toan_tu/bai_tap/bai_tap_chuyen_doi_tien_te.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_du_lieu_toan_tu/bai_tap/ung_dung_may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_du_lieu_toan_tu/bai_tap/ung_dung_may_tinh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +85,9 @@
       <workItem from="1741407666729" duration="15344000" />
       <workItem from="1741426403548" duration="6589000" />
       <workItem from="1741435696749" duration="7180000" />
+      <workItem from="1741453843488" duration="1197000" />
+      <workItem from="1741501698375" duration="14413000" />
+      <workItem from="1741570135621" duration="13791000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="height" placeholder="please enter your height">
+<input type="number" id="weight" placeholder="please enter your weight">
+<button id=btn onclick="bmi()">Chỉ số BMI</button>
+<p id="result"></p>
+</body>
+<script>
+    function bmi() {
+        let weight = parseFloat(document.getElementById("weight").value);
+        let height = parseFloat(document.getElementById("height").value);
+        let btnBmi = weight / (height * height);
+        if (height <= 0) {
+            alert("pleace enter your height")
+        } else {
+            if (btnBmi < 18.5) {
+                document.getElementById("result").innerText = "Underweight"
+            } else {
+                if (btnBmi < 25) {
+                    document.getElementById("result").innerText = "Normal"
+                } else {
+                    if (btnBmi < 30) {
+                        document.getElementById("result").innerText = "Overweight"
+                    } else {
+                        document.write("Obese")
+                    }
+                }
+            }
+        }
+
+    }
+</script>
+</html>

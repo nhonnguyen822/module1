@@ -7,41 +7,56 @@
 <body>
 <input type="number" name="number1" placeholder="Nhập số thứ nhất" id="number1">
 <input type="number" name="number2" placeholder="Nhập số thứ hai" id="number2">
-<button id="btnadd">Addition(+)</button>
-<button id="btnsub">Subtraction(-)</button>
-<button id="btnmul">Multiplication(x)</button>
-<button id="btndiv">Division(/)</button>
+<button id="btnadd" value="+" onclick="result(this.value)">Addition(+)</button>
+<button id="btnsub" value="-" onclick="result(this.value)">Subtraction(-)</button>
+<button id="btnmul" value="*" onclick="result(this.value)">Multiplication(x)</button>
+<button id="btndiv" value="/" onclick="result(this.value)">Division(/)</button>
 <p id="result"></p>
 </body>
 <script>
-    document.getElementById("btnadd").addEventListener("click", function () {
-        var number1 = parseFloat(document.getElementById("number1").value);
-        var number2 = parseFloat(document.getElementById("number2").value);
-        var add = number1 + number2;
-        document.getElementById("result").innerText = "result:" + add;
-    });
-    document.getElementById("btnsub").addEventListener("click", function () {
-        var number1 = parseFloat(document.getElementById("number1").value);
-        var number2 = parseFloat(document.getElementById("number2").value);
-        var sub = number1 - number2;
-        document.getElementById("result").innerText = "result:" + sub;
-    });
-    document.getElementById("btnmul").addEventListener("click", function () {
-        var number1 = parseFloat(document.getElementById("number1").value);
-        var number2 = parseFloat(document.getElementById("number2").value);
-        +parseFloat(document.getElementById("number2").value);
-        var mul = number1 * number2;
-        document.getElementById("result").innerText = "result:" + mul;
-    });
-    document.getElementById("btndiv").addEventListener("click", function () {
-        var number1 = parseFloat(document.getElementById("number1").value);
-        var number2 = parseFloat(document.getElementById('number2').value);
-        if (number2 == 0) {
-            document.getElementById("result").innerText = "Không thể chia 1 số cho 0"
-        } else {
-            var div = number1 / number2;
-            document.getElementById("result").innerText = "result:" + div;
+    // document.getElementById("btnadd").addEventListener("click", function () {
+    //     let number1 = parseFloat(document.getElementById("number1").value);
+    //     let number2 = parseFloat(document.getElementById("number2").value);
+    //     let add = number1 + number2;
+    //     document.getElementById("result").innerText = "result:" + add;
+    // });
+    // document.getElementById("btnsub").addEventListener("click", function () {
+    //     let number1 = parseFloat(document.getElementById("number1").value);
+    //     let number2 = parseFloat(document.getElementById("number2").value);
+    //     let sub = number1 - number2;
+    //     document.getElementById("result").innerText = "result:" + sub;
+    // });
+    // document.getElementById("btnmul").addEventListener("click", function () {
+    //     let number1 = parseFloat(document.getElementById("number1").value);
+    //     let number2 = parseFloat(document.getElementById("number2").value);
+    //     +parseFloat(document.getElementById("number2").value);
+    //     var mul = number1 * number2;
+    //     document.getElementById("result").innerText = "result:" + mul;
+    // });
+    // document.getElementById("btndiv").addEventListener("click", function () {
+    //     let number1 = parseFloat(document.getElementById("number1").value);
+    //     let number2 = parseFloat(document.getElementById('number2').value);
+    //     if (number2 == 0) {
+    //         document.getElementById("result").innerText = "Không thể chia 1 số cho 0"
+    //     } else {
+    //         let div = number1 / number2;
+    //         document.getElementById("result").innerText = "result:" + div;
+    //     }
+    // });
+    function result(value){
+        let number1 = parseFloat(document.getElementById("number1").value);
+        let number2 = parseFloat(document.getElementById('number2').value);
+        switch(value){
+            case"+":document.getElementById("result").innerText = "result:"+(number1+number2);
+                break;
+            case"-":document.getElementById("result").innerText = "result:"+(number1-number2);
+                break;
+            case"*":document.getElementById("result").innerText = "result:"+(number1*number2);
+                break;
+            case "/":if(number2===0){alert("khong the chia 1 so cho 0"+prompt("input number2"))}else{
+                document.getElementById("result").innerText = "result:"+(number1/number2);
+            }
         }
-    })
+    }
 </script>
 </html>

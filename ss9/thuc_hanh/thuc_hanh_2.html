@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="nobita" src="https://upload.wikimedia.org/wikipedia/vi/2/2c/Nobita.png"
+     style="position:relative" height="100" width="80"/>
+</body>
+<script>
+    let element = document.getElementById("nobita")
+    // function init(){
+    //     element = document.getElementById("nobita")
+        element.style.left="0px";
+        element.style.top="0px";
+    // }
+
+    function upArrow() {
+        let element = document.getElementById("nobita");
+        element.style.top = parseFloat(element.style.top) - 10 + "px"
+    }
+
+    function dowrArrow() {
+        let element = document.getElementById("nobita");
+        element.style.top = parseFloat(element.style.top) + 10 + "px"
+    }
+
+    function rightArrow() {
+        let element = document.getElementById("nobita");
+        element.style.left = parseFloat(element.style.left) + 10 + "px"
+    }
+
+    function leftArrow() {
+        let element = document.getElementById("nobita");
+        element.style.left = parseFloat(element.style.left) - 10 + "px"
+    }
+
+    document.addEventListener("keydown", function (event) {
+        switch (event.key) {
+            case "ArrowRight":
+                rightArrow()
+                break;
+            case "ArrowLeft":
+                leftArrow()
+                break;
+            case "ArrowDown":
+                dowrArrow()
+                break;
+            case "ArrowUp":
+                upArrow()
+                break;
+        }
+    })
+// window.onload=init();
+</script>
+</html>
