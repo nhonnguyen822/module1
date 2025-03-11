@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <h1>TIP CALCULATOR</h1>
+  <p>How much was your bill?</p>
+  <span>$</span>
+  <input id="dolar">
+  <select id="service">
+    <option value="30">30%-Outstanding</option>
+    <option value="20">20%-Good</option>
+    <option value="15">15%-It was OK</option>
+    <option value="10">10%-Bad</option>
+    <option value="5">5%-Terrible</option>
+  </select>
+  <p>How many people are sharing the bill?</p>
+  <input id="tip">people
+  <button onclick="cal()" type="button">CALCULATE</button>
+  <p id="cal"></p>
+</form>
+</body>
+<script>
+  function cal(){ let dolar=parseFloat(document.getElementById("dolar").value);
+    let tip=parseFloat(document.getElementById("tip").value);
+    let service=parseFloat(document.getElementById("service").value);
+    if(tip===0){alert("please enter your people")}else{ switch (service) {
+      case 30:document.getElementById("cal").innerText="TIP AMOUNT"+(dolar*30/100/tip).toFixed(2)
+        break;
+      case 20:document.getElementById("cal").innerText="TIP AMOUNT"+(dolar*20/100/tip).toFixed(2)
+        break;
+      case 15:document.getElementById("cal").innerText="TIP AMOUNT"+(dolar*15/100/tip).toFixed(2)
+        break;
+      case 10:document.getElementById("cal").innerText="TIP AMOUNT"+(dolar*10/100/tip).toFixed(2)
+        break;
+      case 5:document.getElementById("cal").innerText="TIP AMOUNT"+(dolar*5/100/tip).toFixed(2)
+        break;
+    }}
+  }
+
+</script>
+</html>
