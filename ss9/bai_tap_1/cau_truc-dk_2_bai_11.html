@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienLuong = parseFloat(prompt("nhap tien luong cua ban"));
+    let cacKhoanMien = parseFloat(prompt("nhap so tien ban duoc mien"));
+    let thuNhap = tienLuong - cacKhoanMien;
+    if (thuNhap > 80) {
+        alert(`tien thue ban phai nop la:${thuNhap * 35 / 100}`)
+    } else {
+        if (52 > thuNhap >= 80) {
+            alert(`tien thue ban phai nop la :${thuNhap * 30 / 100}`)
+        } else {
+            if (32 > thuNhap >= 52) {
+                alert(`tien thue ban phai nop la:${thuNhap * 25 / 100}`)
+            } else {
+                if (18 > thuNhap >= 32) {
+                    alert(`so tien ban phai nop la:${thuNhap * 20 / 100}`)
+                } else {
+                    if (10 > thuNhap >= 18) {
+                        alert(`so tien ban phai nop la:${thuNhap * 15 / 100}`)
+                    } else {
+                        if (5 > thuNhap >= 10) {
+                            alert(`so tien ban phai nop la:${thuNhap * 10 / 100}`)
+                        }else {alert(`thue thu nhap cua ban la :${thuNhap*5/100}`)}
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

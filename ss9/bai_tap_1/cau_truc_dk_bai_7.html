@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("nhap a"));
+    let b = parseFloat(prompt("nhap b"));
+    let c = parseFloat(prompt("nhap c"));
+    let denTa = b * b - 4 * a;
+    if (a === 0) {
+        alert(`nghiem cua phuong trinh :x=${-c / b}`)
+    } else {
+        if (denTa > 0) {
+            alert(`nghiem: x1=${(-b + Math.sqrt(denTa) / a)}`)
+        } else {
+            if (denTa = 0) {
+                alert(`nghiem: x=${-b / (2 * a)}`)
+            } else {
+                alert("pt vo so nghiem")
+            }
+        }
+    }
+</script>
+</body>
+</html>
