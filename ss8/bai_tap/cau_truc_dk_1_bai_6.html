@@ -6,9 +6,19 @@
 </head>
 <body>
 <script>
-  let doanhSo=parseFloat(prompt("nhap doanh so cua hang"));
-  let hoaHong=doanhSo*5/100;
-  document.write(`so hoa hong nhan duoc ${hoaHong}`)
+    let doanhSo = parseFloat(prompt("nhap doanh so cua hang"));
+    if (doanhSo >= 1000) {
+        document.write(`so hoa hong nhan duoc la:${doanhSo * 10 / 100}`);
+    } else if (doanhSo >= 800) {
+        document.write(`so hoa hong nhan duoc la:${doanhSo * 8 / 100}`);
+    } else if (doanhSo >= 600) {
+        document.write(`so hoa hong nhan duoc la:${doanhSo * 6 / 100}`);
+    } else if (doanhSo >= 400) {
+        document.write(`so hoa hong nhan duoc la:${doanhSo * 4 / 100}`);
+    } else if (doanhSo >= 200) {
+        document.write(`so hoa hong nhan duoc la:${doanhSo * 2 / 100}`);
+    } else {document.write("khong co thuong ban can co gan them");
+    }
 </script>
 </body>
 </html>

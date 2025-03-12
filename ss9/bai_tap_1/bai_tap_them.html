@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let score = parseFloat(prompt("input score"));
+    let matchesPlayed = parseFloat(prompt("input matches played"));
+    let win = parseFloat(prompt("input play win"));
+    let winRate = win / score * 100;
+    if (win < matchesPlayed) {
+        if (matchesPlayed < 5) {
+            alert("tan binh")
+        } else {
+            if (score < 1000 || winRate < 50 / 100 * matchesPlayed) {
+                alert("dong")
+            } else {
+                if (1000 <= score < 5000 && winRate < 50 / 100 * matchesPlayed) {
+                    alert("Bạc")
+                } else {
+                    if (5000 <= score < 10000 && winRate < 60 / 100 * matchesPlayed) {
+                        alert("Vàng")
+                    } else {
+                        if (score >= 10000 && winRate > 70 / 100 * matchesPlayed) {
+                            alert("Kim cương")
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+        alert("pleace enter win play")
+    }
+
+
+</script>
+</body>
+</html>

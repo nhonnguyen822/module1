@@ -16,23 +16,20 @@
         let height = parseFloat(document.getElementById("height").value);
         let btnBmi = weight / (height * height);
         if (height <= 0) {
-            alert("pleace enter your height")
+            alert("pleace enter your height");
         } else {
             if (btnBmi < 18.5) {
-                document.getElementById("result").innerText = "Underweight"
+                document.getElementById("result").innerText = "Underweight";
+            } else if (btnBmi < 25) {
+                document.getElementById("result").innerText = "Normal";
+            } else if (btnBmi < 30) {
+                document.getElementById("result").innerText = "Overweight";
             } else {
-                if (btnBmi < 25) {
-                    document.getElementById("result").innerText = "Normal"
-                } else {
-                    if (btnBmi < 30) {
-                        document.getElementById("result").innerText = "Overweight"
-                    } else {
-                        document.write("Obese")
-                    }
-                }
+                document.write("Obese");
             }
         }
-
     }
+
+
 </script>
 </html>

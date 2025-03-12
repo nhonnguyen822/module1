@@ -10,19 +10,26 @@
     let diemGiuaKy = parseFloat(prompt("nhap diem bai giua ky"));
     let diemCuoiKy = parseFloat(prompt("nhap diem bai cuoi ky"));
     let dtb = (diemKiemTra + diemGiuaKy + diemCuoiKy) / 3;
+    // if (dtb >= 8) {
+    //     alert("hoc sinh xep loai gioi")
+    // } else {
+    //     if (a >= 6.5) {
+    //         alert("hoc sinh xep loai kha")
+    //     } else {
+    //         if (a >= 5) {
+    //             alert("hoc sinh xep loai trung binh")
+    //         } else {
+    //             alert("hoc sinh xep loai yeu")
+    //         }
+    //     }
+    // }
     if (dtb >= 8) {
-        alert("hoc sinh xep loai gioi")
-    } else {
-        if (a >= 6.5) {
-            alert("hoc sinh xep loai kha")
-        } else {
-            if (a >= 5) {
-                alert("hoc sinh xep loai trung binh")
-            } else {
-                alert("hoc sinh xep loai yeu")
-            }
-        }
-    }
+        alert("hoc sinh xep loai gioi");
+    } else if (a >= 6.5) {
+        alert("hoc sinh xep loai kha");
+    } else if (a >= 5) {
+        alert("hoc sinh xep loai trung binh");
+    } else {alert("hoc sinh xep loai yeu");}
 </script>
 </body>
 </html>
