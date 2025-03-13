@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="game()">choi</button>
+</body>
+<script>
+    // let min=parseInt(prompt("nhap min"));
+    // let max=parseInt(prompt("nhap max"));
+    // let duDoan=parseInt(prompt("nhap so du doan"));
+    function game() {
+        let min = parseInt(prompt("nhap min"));
+        let max = parseInt(prompt("nhap max"));
+        let ngauNhien = Math.floor(Math.random() * (max - min + 1) + min);
+        let duDoan = parseInt(prompt("nhap so du doan"));
+        if (min < max) {
+            for (let i = 0; i < 3; i++) {
+                if (duDoan === ngauNhien) {
+                    document.write("chuc mung ban");
+                    break;
+                } else if (i === 2 && duDoan !== ngauNhien) {
+                    document.write("rat tiec");
+                } else if (duDoan > ngauNhien) {
+                    alert("ket qua doan cua ban dang lon hon");
+                    duDoan = parseInt(prompt("nhap so du doan"));
+                } else {
+                    alert("ket qua doan cua ban dang be hon");
+                    duDoan = parseInt(prompt("nhap so du doan"));
+                }
+            }
+        } else {
+            min = parseInt(prompt("so min cua ban dang lon hon max vui long nhap lai"));
+        }
+    }
+
+</script>
+</html>

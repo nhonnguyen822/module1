@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietDo = parseInt(prompt("nhap nhiet do"));
+    // while (nhietDo > 100 || nhietDo < 20) {
+    //     if (nhietDo > 100) {
+    //         nhietDo = parseInt(prompt("ban nen giam nhiet do"));
+    //     } else {
+    //         nhietDo = parseInt(prompt("ban nen tang nhiet do"));
+    //     }
+    // }
+    // document.write(`ban da nhap chinh xac :${nhietDo}`)
+    do {
+        if (nhietDo > 100) {
+            nhietDo = parseInt(prompt("ban nen giam nhiet do"));
+        } else if(nhietDo < 20) {
+            nhietDo = parseInt(prompt("ban nen tang nhiet do"));
+        }
+    }while (nhietDo > 100 || nhietDo < 20)
+    document.write(`ban da nhap chinh xac :${nhietDo}`)
+</script>
+</body>
+</html>

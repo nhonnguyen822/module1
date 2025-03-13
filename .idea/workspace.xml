@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/bai_tap/cau_truc_dk_1_bai_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9/bai_tap_1/bai_tap_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9/bai_tap_1/bai_tap_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9/bai_tap_1/bai_tap_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9/bai_tap_1/bai_tap_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9/thuc_hanh/thuc_hanh_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9/thuc_hanh/thuc_hanh_2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +89,12 @@
       <workItem from="1741648307382" duration="3098000" />
       <workItem from="1741654929661" duration="16274000" />
       <workItem from="1741677965477" duration="7509000" />
-      <workItem from="1741741932573" duration="7919000" />
+      <workItem from="1741741932573" duration="8586000" />
+      <workItem from="1741761330726" duration="12949000" />
+      <workItem from="1741781553402" duration="3785000" />
+      <workItem from="1741786659174" duration="5486000" />
+      <workItem from="1741826407275" duration="29321000" />
+      <workItem from="1741865432445" duration="1274000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+    let soFi;
+    let chuoi=`${f0}; ${f1}; `
+
+    for (let i = 0; i < 18; i++) {
+        soFi = f0 + f1;
+        f0 = f1;
+        f1 = soFi;
+        chuoi+=`; ${soFi}`;
+    }
+    document.write(chuoi)
+</script>
+</body>
+</html>

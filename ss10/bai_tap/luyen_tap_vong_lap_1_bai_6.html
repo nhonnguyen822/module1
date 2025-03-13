@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = 0;
+    let sum = 0;
+    let n = 0;
+    while (true) {
+        if (n % 7 === 0) {
+            sum += n;
+            num++;
+        }
+        if (num >= 30) {
+            break;
+        }
+        n++;
+    }
+    document.write(`${sum}va${num}`);
+</script>
+</body>
+</html>

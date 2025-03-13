@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+    let sum=1;
+    for (let i = 0; i < 18; i++) {
+        let fi = f0 + f1;
+        f0 = f1;
+        f1 = fi;
+        sum += fi
+    }
+    document.write(`tong cua 20 so la :${sum}`)
+</script>
+</body>
+</html>

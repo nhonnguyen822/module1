@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienVay = parseInt(prompt("nhap so tien ban vay"));
+    let soThang = parseInt(prompt("nhap so thang "));
+    let tienLai;
+    for (let i = 0; i < soThang; i++) {
+        tienLai = tienVay * 2 / 100;
+        tienVay+=tienLai;
+    }
+    document.write(tienLai)
+</script>
+</body>
+</html>
