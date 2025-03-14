@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ok;
+    let tongTien = 0
+    let chon = "";
+    let cafeDaChon = true;
+    let cacaoDaChon = true;
+    let nuocCamDaChon = true;
+    while (true) {
+        let from = +prompt(".....menu.....\n"
+            + "Hãy nhập số để chọn đồ uống\n"
+            + "1.cafe:    10k\n"
+            + "2.ca cao   15\n"
+            + "3.Nước cam 20k\n"
+            + "4.kết thúc\n"
+            + "......Danh sách đã chọn....\n"
+            + `${chon}`
+            + `            Tổng tiền:${tongTien}k`)
+        switch (from) {
+            case 1:
+                tongTien += 10000;
+                if (cafeDaChon === true) {
+                    chon += "1.cafe \n";
+                    cafeDaChon = false;
+                }
+                break;
+            case 2:
+                tongTien += 15000;
+                if (cacaoDaChon === true) {
+                    chon += "2.ca cao \n";
+                    cacaoDaChon = false;
+                }
+                break;
+            case 3:
+                tongTien += 20000;
+                if (nuocCamDaChon === true) {
+                    chon += "3.nuoc cam \n";
+                    nuocCamDaChon = false;
+                }
+                break;
+            case 4:
+                ok = confirm("ban co muon ket thuc");
+        }
+        if (from === 4 && ok === true) {
+            break;
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
