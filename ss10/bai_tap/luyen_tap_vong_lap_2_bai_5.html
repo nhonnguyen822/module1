@@ -9,11 +9,13 @@
     let tienVay = parseInt(prompt("nhap so tien ban vay"));
     let soThang = parseInt(prompt("nhap so thang "));
     let tienLai;
+    let tongTienLai=0;
     for (let i = 0; i < soThang; i++) {
         tienLai = tienVay * 2 / 100;
         tienVay+=tienLai;
+        tongTienLai+=tienLai
     }
-    document.write(tienLai)
+    document.write(tongTienLai)
 </script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n=prompt("nhap chuoi so n");
+  let arr=n.split('');
+  let count=0;
+  let nguyenAm=["a","e","i","o","u"];
+  for (let i = 0; i < arr.length; i++) {
+    if(nguyenAm.includes(arr[i])){
+      count++;
+    }
+  }
+  alert(count);
+</script>
+
+</body>
+</html>

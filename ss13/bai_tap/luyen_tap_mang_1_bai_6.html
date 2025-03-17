@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("nhap gia tri cua phan tu"));
+    }
+    let v = parseInt(prompt("nhap phan tu so nguyen v"))
+    let kiemTra = false
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {
+            alert("V is in the array");
+            kiemTra = true;
+            break;
+        }
+    }
+    if (kiemTra === false) {
+        alert("V is not in the array")
+    }
+</script>
+
+</body>
+</html>

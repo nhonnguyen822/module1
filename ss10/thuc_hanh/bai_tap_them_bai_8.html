@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let uoc;
+    let m = parseInt(prompt("nhap so m"));
+    let n = parseInt(prompt("nhap so n"));
+    for (let i = 1; i <= n || i <= m; i++) {
+        if (n % i === 0 && m % i === 0) {
+            uoc = i;
+        }
+    }
+    document.write(`uoc chung lon nhat cua 2 so la:${uoc}<br>`);
+    let boi;
+    for (let i = m * n; i >= m || i >= n; i--) {
+        if (i % m === 0 && i % n === 0) {
+            boi = i;
+        }
+    }
+    document.write(`boi chung nho nhat cau 2 so la:${boi}`);
+</script>
+</body>
+</html>

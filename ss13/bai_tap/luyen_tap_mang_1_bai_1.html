@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n;
+    let count=0;
+    for (let i = 0; i < 10; i++) {
+        n = parseInt(prompt("nhap 10 so nguyen duong"));
+        arr[i] = n;
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+            count++
+            document.write(`so:${arr[i]} <br>`);
+        }
+
+    }
+    document.write(`tong cong co ${count} so nguyen`);
+
+</script>
+
+</body>
+</html>

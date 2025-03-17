@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = prompt("input number");
+  let chuoiSo = "";
+  for (let i = 0; i < input.length; i++) {
+    let m=input.slice(i,i+1);
+    let n=input.slice(i+1,i+2);
+    if (+n%2===0&&+m%2===0&&i<input.length-1){
+      m=`${m}-`;
+    }
+    chuoiSo+=m;
+  }
+  document.write(chuoiSo);
+</script>
+
+</body>
+</html>

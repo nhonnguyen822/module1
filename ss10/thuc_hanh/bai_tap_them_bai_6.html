@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhanSoLe = 0;
+    let nhanSoChan = 0;
+    let n = +prompt("nhap so n")
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+            giaiThuaChan += i;
+        } else {
+            giaiThuaLe += i;
+        }
+    }
+    document.write(`giaiThuaLe:${nhanSoLe}`);
+    document.write(`giaiThuaChan:${nhanSoChan}`);
+
+
+</script>
+
+</body>
+</html>

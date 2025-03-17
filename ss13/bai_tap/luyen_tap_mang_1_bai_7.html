@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = parseInt(prompt("nhap gia tri cua phan tu"));
+    }
+    let v = parseInt(prompt("nhap phan tu so nguyen v"));
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {
+            arr.splice(i, 1);
+            arr.push(0);
+        }
+    }
+    alert(arr)
+</script>
+</body>
+</html>

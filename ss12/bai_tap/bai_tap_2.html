@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = prompt("nhap tu muon tim");
+    let eng =['black', 'white', 'prink', 'green', 'blue', 'tee', 'milk','pleace'];
+    let vn = ['den', 'trang', 'hong', 'green', 'xanh', 'tra', 'sua', 'lamon'];
+    let result=false;
+    for (let i = 0; i < eng.length; i++) {
+        if (nhap === eng[i]) {
+            document.write(`co nghia la:${vn[i]}`);
+            result=true;
+        }
+    }
+    if (result===false){document.write("khong tim thay")}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tong = 0;
+    let tich = 1;
+    let n = prompt("nhap so n");
+    for (let i = 0; i < n.length; i++) {
+        let m = n.slice(i, i + 1);
+        tong += (+m);
+        tich *= m;
+    }
+    document.write(`tong la:${tong}`);
+    document.write(`tich la:${tich}`);
+</script>
+</body>
+</html>

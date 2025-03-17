@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dtb;
+    let arr = [];
+    let sum = 0;
+    let n=parseInt(prompt("nhap so luong phan tử trong mảng"));
+    for (let i = 0;i<n; i++) {
+        arr[i] = parseInt(prompt("nhap gia tri cac phan tu"));
+        sum+=arr[i];
+        dtb=sum/(i+1);
+    }
+    document.write(`gia tri trung binh cac phan tu la:${dtb}`);
+</script>
+</body>
+</html>

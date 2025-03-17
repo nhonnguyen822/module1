@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    let arr = [];
+    let viTri;
+    let maxArr;
+    for (let i = 0; i < 10; i++) {
+        n = parseInt(prompt("nhap n so nguyen khac nhau"));
+        arr[i] = n;
+    }
+    for (let i = 1; i < arr.length; i++) {
+        maxArr = arr[0];
+        if (maxArr < arr[i]) {
+            maxArr = arr[i];
+            viTri = i;
+        }
+    }
+    document.write(`phan tu lon nhat la:${maxArr} va vi tri do la:${viTri}`);
+</script>
+
+</body>
+</html>
