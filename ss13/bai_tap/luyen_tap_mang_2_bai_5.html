@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi1 = prompt("nhap chuoi thu nhat");
+    let chuoi2 = prompt("nhap chuoi thu hai");
+    let arr1 = chuoi1.split('');
+    let arr2 = chuoi2.split('');
+    let soSanh = true;
+    if (arr1.length !== arr2.length) {
+        alert("hai chuoi khac nhau");
+    } else {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] !== arr2[i]) {
+                alert("hai chuoi khac nhau");
+                soSanh = false;
+                break;
+            }
+        }
+    }
+    if (soSanh === true) {
+        alert("2 chuoi bang nhau");
+    }
+</script>
+
+</body>
+</html>

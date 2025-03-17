@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = new Array(5);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = new Array(4);
+        for (let j = 0; j < a[i].length; j++) {
+            a[i][j] = prompt("nhap so n");
+        }
+    }
+    for (let i = 0; i < a.length; i++) {
+        document.write(`[${a[i]}] <br>`);
+    }
+</script>
+</body>
+</html>
