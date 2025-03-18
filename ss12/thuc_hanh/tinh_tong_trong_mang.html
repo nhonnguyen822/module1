@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("nhap so n"));
+    let sum = 0;
+    while (0 > n || n > 20) {
+        n = parseInt(prompt("nhap so n"));
+    }
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("nhap gia tri cac phan tu cua mang");
+    }
+    alert(arr);
+
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 === 0 && arr[i] % 3 === 0) {
+            sum += arr[i];
+        }
+    }
+    alert(sum);
+
+
+</script>
+
+</body>
+</html>

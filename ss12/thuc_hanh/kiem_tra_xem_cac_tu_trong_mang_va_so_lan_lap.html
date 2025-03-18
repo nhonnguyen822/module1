@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dem = [];
+    let str = prompt("nhap vao mot chuoi");
+    str.trim();
+    let arr = str.split(' ');
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== "") {
+            if (!dem.includes(arr[i])) {
+                dem.push(arr[i]);
+            }
+        }
+    }
+    for (let i = 0; i < dem.length; i++) {
+        let count = 0;
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[i] === arr[j] && arr[i] !== "") {
+                count++;
+            }
+        }
+        document.write(`tu ${arr[i]} : ${count}lan <br/>`);
+    }
+</script>
+</body>
+</html>

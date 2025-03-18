@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = []
+    let n = prompt("nhap chuoi so co 4 chu so");
+    arr = n.split('');
+    if (arr.length !== 4) {
+        alert("can nhap 4 chu so");
+    } else {
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] < arr[i + 1]) {
+                arr.splice(i, 1);
+                break;
+            }
+        }
+        if (arr.length === 4) {
+            arr.splice(arr.length - 1, 1);
+        }
+    }
+    let soLonNhat = arr.join('');
+    alert(soLonNhat);
+</script>
+
+</body>
+</html>

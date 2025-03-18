@@ -11,13 +11,18 @@
         arr[i] = parseInt(prompt("nhap gia tri cua phan tu"));
     }
     let v = parseInt(prompt("nhap phan tu so nguyen v"));
+
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === v) {
-            arr.splice(i, 1);
-            arr.push(0);
+            for (let j = i; j < arr.length; j++) {
+                arr[j] = arr[j + 1];
+            }
+            arr[arr.length - 1] = 0;
+            i--
         }
     }
-    alert(arr)
+    alert(arr);
+
 </script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<table border="1">-->
+<!--    <tr>-->
+<!--        <td style="width: 40px ;height: 40px;"></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<p id="table"></p>
+<script>
+    let arr = new Array(10);
+    let play1 = true
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(10)
+        for (let j = 0; j < arr[i].length; j++) {
+            arr[i][j] = '';
+        }
+    }
+    function displayTable() {
+        let caRoTable = '<table border="1">';
+        for (let i = 0; i < arr.length; i++) {
+            caRoTable += ' <tr>'
+            for (let j = 0; j < arr[i].length; j++) {
+                caRoTable += ` <td style="width: 40px ;height: 40px; text-align: center ;" onclick="play(${i},${j})">`;
+                caRoTable += arr[i][j]
+                caRoTable += '</td>'
+            }
+            caRoTable += ' </tr>'
+        }
+        caRoTable += '</table>';
+        document.getElementById("table").innerHTML = `${caRoTable}`;
+    }
+
+    displayTable()
+    function play(i, j) {
+        if (arr[i][j] === "") {
+            if (play1) {
+                arr[i][j] = "X"
+                kiemTra()
+                play1 = false;
+
+            } else if (!play1) {
+                arr[i][j] = "0"
+                play1 = true
+            }
+        } else {
+            alert("ban da chon o nay roi")
+        }
+        displayTable()
+    }
+
+
+</script>
+</body>
+
+</html>
