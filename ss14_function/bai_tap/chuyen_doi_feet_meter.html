@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function footToMeter(x) {
+        return 0.305 * x;
+    }
+
+    function meterToFoot(y) {
+        return 3.279 * y;
+    }
+
+    let n = +prompt("nhap so muon chuyen");
+    document.write(`doi thanh meter la:${footToMeter(n)}`);
+    // document.write(`doi thanh foot la:${meterToFoot(n)}`);
+</script>
+</body>
+</html>

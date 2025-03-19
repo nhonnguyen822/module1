@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function change(doF) {
+        let doC;
+        doF = parseFloat(doF);
+        doC = (doF - 32) / 1.8;
+        return doC;
+    }
+
+    let inputDoF = prompt("nhap do F");
+    document.write(change(inputDoF));
+</script>
+
+</body>
+</html>

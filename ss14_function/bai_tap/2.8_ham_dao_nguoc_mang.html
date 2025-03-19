@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhap cac gia tri cho mang");
+    }
+
+    function daoNguocMang(arr) {
+        for (let i = 0; i < arr.length / 2; i++) {
+            let change = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = change;
+        }
+        return arr;
+    }
+
+    document.write(`result:${daoNguocMang(arr)}`);
+</script>
+</body>
+</html>

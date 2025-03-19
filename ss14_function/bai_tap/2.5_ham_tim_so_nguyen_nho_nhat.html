@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt("nhap so nguyen duong thu nhat");
+    let num2 = +prompt("nhap so nguyen duong thu hai");
+    let num3 = +prompt("nhap so nguyen duong thu ba");
+
+    function timMin(x, y, z) {
+        if (x < y && x < z) {
+            return x;
+        } else if (y < z) {
+            return y;
+        } else {
+            return z;
+        }
+    }
+
+    document.write(`so nguyen nho nhat la:${timMin(num1, num2, num3)}`);
+</script>
+</body>
+</html>

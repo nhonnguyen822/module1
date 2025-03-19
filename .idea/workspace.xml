@@ -6,24 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12/bai_tap/bai_tap_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12/bai_tap/bai_tap_1/chuyen_mang_thanh_chuoi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12/bai_tap/bai_tap_1/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12/bai_tap/bai_tap_1/dao_nguoc_chu_thuong_va_in_hoa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12/bai_tap/luyen_tap.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12/bai_tap/tao_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/hien_thi_so_lon_hon_10_trong_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/hien_thi_so_nguyen_lon_nhat_trong_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/tinh_tb_trong_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/dao_nguoc_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/dem_so_nguyen_am.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/xem_ky_tu_co_thuoc_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/them_sua_xoa_di_chuyen_trong_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/sap_xep_thu_tu_giam_dan_trong_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_1_bai_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/noi_2_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_2_bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/tao_mang_2_chieu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_2_bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/dao_nguoc_cac_ky_tu_trong_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_2_bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/khai_bao_ky_tu_va_kich_thuoc_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_2_bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/dem_so_tu_chuoi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_2_bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/kiem_tra_2_chuoi_giong_nhau.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13/bai_tap/luyen_tap_mang_2_bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13/bai_tap/thay_the_cac_ky_tu_trong_mang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12/thuc_hanh/luyen_tap_co_ca_ro.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12/thuc_hanh/luyen_tap_co_ca_ro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/bai_tap/ham_kiem_ktra_chuoi_doi_xung.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/bai_tap/ham_kiem_ktra_chuoi_doi_xung.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +123,10 @@
       <workItem from="1742209750280" duration="5342000" />
       <workItem from="1742215169647" duration="443000" />
       <workItem from="1742258992199" duration="1558000" />
-      <workItem from="1742260801882" duration="26078000" />
+      <workItem from="1742260801882" duration="30650000" />
+      <workItem from="1742294515480" duration="251000" />
+      <workItem from="1742303166390" duration="2232000" />
+      <workItem from="1742343774218" duration="17314000" />
     </task>
     <servers />
   </component>

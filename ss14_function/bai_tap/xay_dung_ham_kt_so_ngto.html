@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(soKT) {
+        for (let i = 2; i < soKT; i++) {
+            if (soKT % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let n = +prompt("nhap so muon kiem tra");
+    if (kiemTra(n)) {
+        alert(`${n}la so nguyen to`);
+    } else {
+        alert(`${n}khong phai la so nguyen to`);
+    }
+
+</script>
+
+</body>
+</html>

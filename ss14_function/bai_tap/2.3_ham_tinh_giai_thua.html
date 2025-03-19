@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhap so nguyen n");
+
+    function tinhGiaiThua(x) {
+        let giaithua = 1;
+        for (let i = 1; i <= x; i++) {
+            giaithua *= i;
+        }
+        return giaithua;
+    }
+
+    document.write(`giai thua cua ${num} la:${tinhGiaiThua(num)}`);
+</script>
+</body>
+</html>

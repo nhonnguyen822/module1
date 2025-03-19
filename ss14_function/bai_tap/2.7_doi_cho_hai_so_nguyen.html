@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = prompt("nhap so nguyen thu nhat");
+    let num2 = prompt("nhap so nguyen thu hai");
+    let arr = [];
+    arr.push(num1);
+    arr.push(num2);
+
+    function chuyenDoi(x) {
+        let change = x[0];
+        x[0] = x[1];
+        x[1] = change;
+        return x;
+    }
+
+    alert(chuyenDoi(arr));
+
+</script>
+</body>
+</html>
