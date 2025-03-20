@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="hienThi"></p>
+<script>
+    let arrChuaSanPham = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Readmi Note 4',
+        'Apple iPhone 6s', 'Xiaomi 5s Plus', 'Apple iPhone 8Plus', 'Fujitsu F-04E', 'Oppo A71'];
+
+    let tableString;
+
+    function hienThiTable() {
+        tableString = `<h2>Add New product</h2>`
+        tableString += `<span><input type="text" id="name"></span>`
+        tableString += `<button onclick="themSanPham()"> ADD</button>`
+        tableString += `<table>`
+        tableString += `<tr>`
+        tableString += `<th><h4>Product Name</h4></th>`
+        tableString += `<th><h4> ${arrChuaSanPham.length}Product</h4></th>`
+        tableString += `<tr>`
+        for (let i = 0; i < arrChuaSanPham.length; i++) {
+            tableString += `<tr>`
+            tableString += `<td>${arrChuaSanPham[i]}</td>`
+            tableString += `<td><button onclick="thayDoiSanPham(${i})">Edit</button></td>`
+            tableString += `<td><button onclick="xoaSanPham(${i})">Delete</button></td>`
+            tableString += `<tr>`
+        }
+        tableString += `</table>`
+        document.getElementById("hienThi").innerHTML = tableString
+    }
+
+    function themSanPham() {
+        let input = document.getElementById("name").value;
+        if (input === '') {
+            alert("vui long nhap san pham muon them");
+        } else {
+            arrChuaSanPham.push(input);
+        }
+        hienThiTable()
+    }
+
+    function xoaSanPham(index) {
+        let conf = confirm(`ban co thuc su muon xoa:${arrChuaSanPham[index]}khong?`);
+        if (conf) {
+            arrChuaSanPham.splice(index, 1)
+        }
+        hienThiTable(arrChuaSanPham)
+    }
+
+    function thayDoiSanPham(index) {
+        arrChuaSanPham[index] = prompt(`ban muon thay doi${arrChuaSanPham[index]} thanh:`)
+        hienThiTable(arrChuaSanPham)
+    }
+
+    hienThiTable()
+</script>
+
+</body>
+</html>

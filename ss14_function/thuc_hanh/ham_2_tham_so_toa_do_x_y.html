@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [1, 2, 3, 4, 5]
+    let y = [3, 5, 7, 9, 11]
+
+    function kiemTraToaDo(x, y) {
+        if (x.length !== y.length) {
+            return false;
+        }
+        for (let i = 0; i < x.length; i++) {
+            if (y[i] !== 2 * x[i] + 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    alert(kiemTraToaDo(x, y));
+</script>
+</body>
+</html>

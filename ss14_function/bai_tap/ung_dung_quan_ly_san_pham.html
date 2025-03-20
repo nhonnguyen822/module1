@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th colspan="3"></th>
+<p id="table"></p>
+<script>
+    let arrChuaSanPham = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Readmi Note 4',
+        'Apple iPhone 6s', 'Xiaomi 5s Plus', 'Apple iPhone 8Plus', 'Fujitsu F-04E', 'Oppo A71'];
+
+    function hienThiTable() {
+        let tableString;
+        tableString = `<h2>Add New Product</h2>`
+        tableString += `<input id="input" type="text"  style="width: 200px;height: 20px"> <button onclick="themSanPham()" style="height: 25px">add</button>`
+        tableString += `<table border="1">`
+        tableString += `<tr>`
+        tableString += `<td colspan="3">Product Name</td>`;
+        tableString += `<th>${arrChuaSanPham.length} produccts</th>`
+
+        tableString += `</tr>`
+        for (let i = 0; i < arrChuaSanPham.length; i++) {
+            tableString += `<tr>`
+            tableString += `<td>${arrChuaSanPham[i]}</td>`
+            tableString += `<td><button onclick="thayDoiSanPham(this.value)" value="${i}">Edit</button></td>`;
+            tableString += `<td><button onclick="xoaSanPham(this.value)" value="${i}">Delete</button></td>`;
+            tableString += `<td style="width: 50px;height: 30px"></td>`
+            tableString += `</tr>`
+        }
+        tableString += `</table>`
+        document.getElementById("table").innerHTML = tableString;
+    }
+
+
+    function themSanPham() {
+        let add = document.getElementById("input").value;
+        arrChuaSanPham.push(add);
+        hienThiTable();
+    }
+
+    function xoaSanPham(value) {
+        if (confirm("ban co thuc su muon xoa") === true) {
+            for (let i = 0; i < arrChuaSanPham.length; i++) {
+                if (`${i}` === value) {
+                    arrChuaSanPham.splice(i, 1);
+                }
+            }
+        }
+        hienThiTable();
+    }
+
+    function thayDoiSanPham(value) {
+        arrChuaSanPham[value]=prompt("nhap noi dung thay doi");
+        hienThiTable()
+
+    }
+
+    hienThiTable()
+
+</script>
+</body>
+</html>

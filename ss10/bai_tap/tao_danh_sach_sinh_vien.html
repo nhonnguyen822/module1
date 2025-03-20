@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ok;
+    let students = ["nhon", "nguyen"];
+    while (true) {
+        let form = +prompt(".......Quản lý sinh viên.......\n"
+            + "Hãy nhập số lượng đồ để uống \n"
+            + "1.Hiển thị danh sách sinh viên\n"
+            + "2.Thêm mới sinh viên\n "
+            + "3.Xóa sinh viên\n"
+            + "4.kết thúc chương trình\n")
+        switch (form) {
+            case 1:
+                hienThiSV()
+                break;
+            case 2:
+                themSV()
+                break;
+            case 3:
+                xoaSV()
+                break;
+            case 4:
+                ok = confirm("ban co muon ket thuc chuong trinh");
+                break;
+        }
+        if (form === 4 && ok === true) {
+            break;
+        }
+
+    }
+
+    function hienThiSV() {
+        let list = "";
+        for (let i = 0; i < students.length; i++) {
+            list += ` \n    ${i + 1}    ${students[i]}`
+        }
+        alert(`..........danh sach sinh vien......
+                       ${list}`)
+        return list;
+    }
+
+    function themSV() {
+        let input = prompt("nhap ten sinh vien muon them");
+        if (input === '') {
+            alert("vui long nhap ten sv muon them");
+        } else {
+            students.push(input);
+        }
+    }
+
+    function xoaSV() {
+        if(students.length===0){alert("khong con sv nao de xoa")}
+        let list = "";
+        for (let i = 0; i < students.length; i++) {
+            list += ` \n    ${i + 1}    ${students[i]}`;
+        }
+        let xoaSV = +prompt(`${list}`);
+        students.splice(xoaSV-1, 1);
+    }
+</script>
+</body>
+</html>

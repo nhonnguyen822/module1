@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Add New Product</h2>
+<span><input type="text" id="sanPham">
+  <button onclick="themSanPham()"> ADD</button>
+  <h4>Display All Product</h4>
+    <p id="table"></p>
+</span>
+<script>
+    let arrChuaSanPham = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Readmi Note 4',
+        'Apple iPhone 6s', 'Xiaomi 5s Plus', 'Apple iPhone 8Plus', 'Fujitsu F-04E', 'Oppo A71'];
+
+    function hienThiTable() {
+        let tableString;
+        tableString = `<table>`;
+        tableString += `<tr>`
+        tableString += `<td><h5>Product Name</h5></td>`;
+        tableString += `<td>${arrChuaSanPham.length} products</td>`
+        tableString += `</tr>`
+        for (let i = 0; i < arrChuaSanPham.length; i++) {
+            tableString += `<tr>`;
+            tableString += `<td>${arrChuaSanPham[i]}</td>`;
+            tableString += `<td><button onclick="thayDoiSanPham(${i})">EDIT</button></td>`
+            tableString += `<td><button onclick="xoaSanPham(${i})">DELETE</button></td>`
+            tableString += `</tr>`;
+        }
+        tableString += `</table>`;
+        document.getElementById("table").innerHTML = tableString;
+    }
+
+    function themSanPham() {
+        let value = document.getElementById("sanPham").value;
+        if (value === '') {
+            alert("vui long nhap ten san pham");
+        } else {
+            arrChuaSanPham.push(value);
+        }
+        hienThiTable(arrChuaSanPham);
+    }
+
+    function xoaSanPham(index) {
+        let conf = confirm("ban co thuc su muon xoa");
+        if (conf) {
+            arrChuaSanPham.splice(index, 1);
+        }
+        hienThiTable(arrChuaSanPham);
+    }
+
+    function thayDoiSanPham(index) {
+        arrChuaSanPham[index] = prompt(`${arrChuaSanPham[index]}`);
+        hienThiTable(arrChuaSanPham);
+    }
+
+    hienThiTable();
+</script>
+</body>
+</html>
