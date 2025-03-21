@@ -7,7 +7,8 @@
 <body>
 <script>
     function kiemTraTamGiacVuong(x, y, z) {
-        if (x + y < z || x + z < y || z + y < x) {
+
+        if (x + y < z || x + z < y || z + y < x||x>0||y>0||z>0) {
             return `khong phai la canh tam giac`;
         }
         if (x * x + y * y === z * z || x * x + z * z === y * y || y * y + z * z === x * x) {
