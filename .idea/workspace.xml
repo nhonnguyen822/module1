@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/tao_danh_sach_sinh_vien.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_tap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_tap_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/chon_do_uong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_vong_lap_1_bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/game_doan_so.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_vong_lap_2_bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/tinh_day_fibonaci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_vong_lap_2_bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/tinh_giai_thua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_vong_lap_2_bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/ve_tam_giac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_vong_lap_2_bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/tinh_tien_lai_ngan_hang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14_function/bai_tap/xay_dung_ham_kt_so_ngto.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/bai_tap/xay_dung_ham_kt_so_ngto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9/bai_tap_1/bai_tap_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9/bai_tap_1/tao_may_tinh_don_gian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9/bai_tap_1/bai_tap_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9/bai_tap_1/game_pizz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/thuc_hanh/ham_kiem_tra_chan_le.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/thuc_hanh/ham_kiem_tra_chan_le.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/thuc_hanh/ham_kiem_tra_ky_tu_va_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/thuc_hanh/ham_kiem_tra_ky_tu_va_so.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/thuc_hanh/ham_kiem_tra_so_nguyen_to.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/thuc_hanh/ham_kiem_tra_so_nguyen_to.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +130,8 @@
       <workItem from="1742343774218" duration="27808000" />
       <workItem from="1742381902170" duration="5162000" />
       <workItem from="1742432550780" duration="10332000" />
-      <workItem from="1742445759536" duration="11636000" />
+      <workItem from="1742445759536" duration="14367000" />
+      <workItem from="1742521678876" duration="1765000" />
     </task>
     <servers />
   </component>

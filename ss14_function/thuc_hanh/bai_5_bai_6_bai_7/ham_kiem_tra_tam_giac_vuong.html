@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraTamGiacVuong(x, y, z) {
+        if (x + y < z || x + z < y || z + y < x) {
+            return `khong phai la canh tam giac`;
+        }
+        if (x * x + y * y === z * z || x * x + z * z === y * y || y * y + z * z === x * x) {
+            return `day la 3 canh cua tam giac vuong`;
+        }
+        return `day la 3 canh cua tam giac`;
+
+    }
+
+    let a = +prompt(`nhap canh a`);
+    let b = +prompt(`nhap canh b`);
+    let c = +prompt(`nhap canh c`);
+    alert(kiemTraTamGiacVuong(a, b, c));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraNguyenAm(str) {
+        let nguyenAm = ['a', 'i', 'e', 'o', 'u'];
+        let arrNA = [];
+        str.toLowerCase();
+        let arr = str.split('');
+        for (let i = 0; i < arr.length; i++) {
+            if (nguyenAm.includes(arr[i]) && !arrNA.includes(arr[i])) {
+                arrNA.push(arr[i]);
+            }
+        }
+        return arrNA;
+    }
+
+    let str = prompt("nhap vao mot chuoi");
+    alert(kiemTraNguyenAm(str));
+</script>
+</body>
+</html>

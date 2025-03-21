@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 6; i++) {
+        arr[i] = +prompt("nhap gia tri cho mang");
+    }
+
+    function kiemTra(arr) {
+        for (let i = 0; i < arr.length; i += 2) {
+            if (arr[i] > arr[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    alert(kiemTra(arr));
+
+</script>
+</body>
+</html>
