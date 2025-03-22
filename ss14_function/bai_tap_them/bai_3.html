@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 3	Nhập 1 mảng từ bàn phím với độ dài n
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Kiểm tra mảng vừa nhập. Nếu  mảng mới nhập đã được sắp xếp ( tăng/giảm dần) thì hiện thị thông báo "OK", nếu không thoả mãn thì hiện thị "NO"
+
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = +prompt("nhap gia tri cho mang");
+    }
+    alert(arr)
+    if (arr[0] > arr[1]) {
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i + 1]) {
+                alert('no');
+                break;
+            }
+        }
+
+    } else {
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > arr[i + 1]) {
+                alert("no");
+                break
+            }
+        }
+        alert('ok');
+    }
+
+</script>
+</body>
+</html>

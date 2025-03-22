@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function inHinhThoi(x) {
+        for (let i =1; i < x * 2; i++) {
+            for (let j = 0; j < x * 2; j++) {
+                if (j === x - i || j === x + i) {
+                    document.write(`${i}`);
+                } else {
+                    document.write('&ensp;');
+                }
+                if (i === x && j === 2 * x-1) {
+                    for (let k = x; k >= 1; k--) {
+                        for (let l = 0; l < 2 * x; l++) {
+                            if (l === x - k || l === x + k) {
+                                document.write(`${k}`);
+                            } else {
+                                document.write('&ensp;');
+                            }
+                        }
+                        document.write('<br>');
+                    }
+                }
+            }
+            document.write('<br>');
+        }
+    }
+    inHinhThoi(9);
+</script>
+</body>
+</html>

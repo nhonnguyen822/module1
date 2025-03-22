@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timNhiPhan(x) {
+        let arr = []
+        while (x > 0) {
+            let y = Math.floor(x % 2);
+            arr.push(y);
+            x = Math.floor(x / 2);
+        }
+        return arr.reverse().join('');
+    }
+
+    let num = parseInt(prompt("nhap so"));
+    alert(timNhiPhan(num));
+
+
+</script>
+</body>
+</html>

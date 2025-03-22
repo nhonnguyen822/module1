@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 23	Viết 1 hàm truyền vào 1 tham số (với tham  số mảng), (checkArray(array))
+    // Hàm trả về  True nếu tất cả các phần tử trong mảng là số, ngược lại trả về False
+    // Ví dụ: checkArray([111,12,34,2] => True
+    // Ví dụ: checkArray([1a,12,34,2] => False				Cách tính =>
+    //
+
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr = prompt("nhap cac gia tri cho mang");
+    }
+    alert(arr);
+
+    function kiemTraCacPhanTuSoTrongMang(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (!isNaN(arr[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    alert(kiemTraCacPhanTuSoTrongMang(arr));
+</script>
+</body>
+</html>

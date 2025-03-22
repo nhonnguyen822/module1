@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 20	Nhập 1 mảng số từ bàn phím với độ dài n
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Tính tổng các phần tử tử chẵn và ở vị trí lẻ
+    alert(1 % 2)
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = +prompt("nhap cac gia tri cho mang");
+    }
+    alert(arr);
+    let sumChan = 0;
+    let sumLe = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            sumChan += arr[i];
+        } else if (i % 2 === 1) {
+            sumLe += arr[i];
+        }
+
+
+    }
+    alert(`tong cac phan tu chan la:${sumChan}`);
+    alert(`tong cac phan tu vi tri le la:${sumLe}`);
+
+</script>
+</body>
+</html>

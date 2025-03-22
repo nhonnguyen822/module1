@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 13	Nhập 1 mảng từ bàn phím với độ dài n
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Kiểm tra mảng vừa nhập. Nếu tất cả các phần tử trong mảng là số nguyên tố  thì hiện thị thông báo "OK", nếu không thoả mãn thì hiện thị "NO"
+    //
+
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = +prompt("nhap cac gia tri cho mang");
+    }
+    alert(arr);
+    let result = true;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 2) {
+            result = false;
+        }
+        for (let j = 2; j < arr[i]; j++) {
+            if (arr[i] % j === 0) {
+                result = false;
+                break;
+            }
+        }
+    }
+    if (result) {
+        alert("ok");
+    } else {
+        alert("no");
+    }
+
+</script>
+</body>
+</html>

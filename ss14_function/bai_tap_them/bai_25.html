@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 25	Nhập 1 mảng số từ bàn phím với độ dài n
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Kiểm tra mảng vừa nhập. Nếu các phần tử phía trước của mỗi phần tử đều là ước của nó thì hiện thị OK, không phải thì trả về NO
+    // Ví dụ: [1,2,6,12,48] =>OK( vì 1 là ước của 2  và  1,2 là ước của 6  và  1,2,6 là ước của 12 và 1,2,6,12 là ước của 48)
+    // Ví dụ: [1,2,6,13,48] =>NO ( vì 6 không phải là ước 13)
+
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = +prompt("nhap cac gia tri cho mang");
+    }
+    alert(arr);
+    let result = true; arr.length-1; i++) {
+        if (!timUoc(arr[i + 1]).includes(arr[i])) {
+            result = false;
+        }
+    }
+    if (result) {
+        alert('ok');
+    } else {
+        alert("no");
+    }
+
+    function timUoc(n) {
+        let uocN = [];
+        for (let i = 1; i <= n; i++) {
+            if (n % i === 0) {
+                uocN.push(i);
+            }
+        }
+        return uocN;
+    }
+</script>
+</body>
+</html>

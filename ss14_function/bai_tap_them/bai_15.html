@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 15	Nhập 1 mảng số từ bàn phím với độ dài n
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Kiểm tra mảng vừa nhập. Nếu tất cả các phần tử trong mảng đều thuộc dãy số fibonacy  thì hiện thị thông báo "OK", nếu không thoả mãn thì hiện thị "NO"
+    //
+
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = +prompt("nhap cac gia tri cho mang");
+    }
+    alert(arr);
+    let f0 = 0;
+    let f1 = 1;
+    let max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    let arrFi = [0, 1];
+    let fi = 0;
+    while (fi <= max) {
+        fi = f0 + fi;
+        f0 = f1;
+        f1 = fi;
+        arrFi.push(fi);
+    }
+    let result = true;
+    for (let i = 0; i < arr.length; i++) {
+        if (!arrFi.includes(arr[i])) {
+            result = false;
+            break;
+        }
+    }
+    if (result) {
+        alert('ok');
+    } else {
+        alert('no');
+    }
+
+</script>
+</body>
+</html>

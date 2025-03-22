@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 6	Viết 1 hàm truyền vào 1 tham số (với tham số là một chuỗi), (checkString(str))
+    // "Hàm trả về mảng các ký tự là nguyên âm có trong mảng
+    // "
+    //
+
+    let str = prompt("nhap vao 1 chuoi");
+
+    function kiemTraNguyenAm(str) {
+        let arr = str.split('');
+        let nguyenAm = ['a', 'i', 'e', 'o', 'u'];
+        let arrReasult = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (nguyenAm.includes(arr[i])) {
+                arrReasult.push(arr[i]);
+            }
+        }
+        return arrReasult;
+    }
+    alert(kiemTraNguyenAm(str));
+</script>
+</body>
+</html>

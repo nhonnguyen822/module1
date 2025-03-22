@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 10	Nhập 1 mảng từ bàn phím với độ dài n
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Hiện thị các số chính phương có trong mảng ( Số chính phương là các số ví dụ 1,4,9,16,25,36,49……)
+
+    let arr = [];
+    let arrResult = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = +prompt("nhap cac gia tri cua mang ");
+    }
+    alert(arr);
+    for (let i = 0; i < arr.length; i++) {
+        if (Math.sqrt(arr[i]) % 2 === 1 || Math.sqrt(arr[i]) % 2 === 0) {
+            arrResult.push(arr[i]);
+        }
+    }
+    alert(arrResult);
+
+</script>
+</body>
+</html>

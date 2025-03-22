@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 4	Viết 1 hàm truyền vào 1 tham số (với tham số là một chuỗi), (checkString(str))
+    // "Thực hiện kiểm tra. Nếu số ký tự in Hoa bằng ký tự in thường  thì trả về true. Ngược lại trả về false
+    // "
+
+    let str = prompt("nhap vao mot chuoi");
+
+    function kiemTraSoLuongKyTuInHoa(str) {
+        let arr = str.split('');
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[i].toLowerCase()) {
+                count += 1;
+            }
+        }
+        if (count === arr.length / 2) {
+            return true;
+        }
+        return false;
+    }
+    alert(kiemTraSoLuongKyTuInHoa(str));
+</script>
+</body>
+</html>

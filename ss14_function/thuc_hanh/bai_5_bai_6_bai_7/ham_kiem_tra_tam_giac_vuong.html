@@ -8,14 +8,13 @@
 <script>
     function kiemTraTamGiacVuong(x, y, z) {
 
-        if (x + y < z || x + z < y || z + y < x||x>0||y>0||z>0) {
+        if (x + y < z || x + z < y || z + y < x || x > 0 || y > 0 || z > 0) {
             return `khong phai la canh tam giac`;
         }
         if (x * x + y * y === z * z || x * x + z * z === y * y || y * y + z * z === x * x) {
             return `day la 3 canh cua tam giac vuong`;
         }
         return `day la 3 canh cua tam giac`;
-
     }
 
     let a = +prompt(`nhap canh a`);

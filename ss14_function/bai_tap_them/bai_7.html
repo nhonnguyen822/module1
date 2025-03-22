@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 7	Khai báo  1 mảng số nguyên từ bàn phím với độ dài n.
+    //         Nhập các phần tử cho  mảng với  một số nguyên lớn hơn 10 và nhỏ hơn 100.
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Viết chương trình hiện thị các phần tử của mảng có hàng đơn vị lớp hơn hàng chục ví dụ: [11, 12, 21 , 56, 19] => kết quả hiện thị ra 12,56,19
+
+    let arr = [];
+    let arrResult = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = prompt("nhap cac gia tri cho mang");
+    }
+    alert(arr);
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] < arr[i][j + 1]) {
+                arrResult.push(arr[i]);
+            }
+        }
+    }
+    alert(arrResult);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 17	Viết 1 hàm truyền vào 1 tham số (với tham số là một chuỗi), (checkString(str))
+    // "Hàm trả về Từ viết tắt của chuỗi
+    // "
+    // "Nếu chuỗi chỉ có 1 từ thì trả về từ đó . Ví dụ   : ""Hello"" => ""Hello""
+    // "
+    // Nếu chuỗi từ 2 từ trở lên thì trả về chuỗi gồm các ký tự đầu tiên của một từ. Ví dụ:" Object Oriented Programming" => OOP
+
+    let str = prompt("nhap mot chuoi");
+
+    function traVeKyTuVietTat(str) {
+        str.toLowerCase();
+        let arrResult = [];
+        let arr = str.split(' ');
+        if (arr.length === 1) {
+            return arr[0];
+        }
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < 1; j++) {
+                arrResult.push(arr[i][0].toUpperCase());
+            }
+        }
+        return arrResult;
+    }
+    alert(traVeKyTuVietTat(str));
+</script>
+</body>
+</html>

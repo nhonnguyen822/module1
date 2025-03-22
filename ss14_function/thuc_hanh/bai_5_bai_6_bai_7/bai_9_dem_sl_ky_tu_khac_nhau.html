@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraKyTuKhacNhau(str) {
+        let arr = str.split('');
+        let arr2 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (!arr2.includes(arr[i])) {
+                arr2.push(arr[i]);
+            }
+        }
+        alert(`co${arr2.length}ky tu khac nhau trong chuoi la ${arr2}`);
+    }
+    let str=prompt("nhap chuoi ");
+    kiemTraKyTuKhacNhau(str);
+</script>
+
+</body>
+</html>

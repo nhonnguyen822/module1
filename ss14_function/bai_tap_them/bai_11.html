@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 11	Viết 1 hàm truyền vào 1 tham số (với tham số là một chuỗi), (checkString(str))
+    // "Hàm trả về mảng các ký tự không phải là số[0,….9] và không phải là ký tự alphabet[a…z,A,…Z]
+    // "
+    function kiemTraKyTu(str) {
+        let arr = str.split('');
+        let arrResult = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (isNaN(arr[i]) && arr[i].toLowerCase() === arr[i].toUpperCase() && arr[i] !== ' ') {
+                arrResult.push(arr[i]);
+            }
+        }
+        return arrResult;
+    }
+
+    let str = prompt("nhap gia tri chuoi");
+    alert(kiemTraKyTu(str));
+
+</script>
+</body>
+</html>

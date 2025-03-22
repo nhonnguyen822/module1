@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài tập 12	Viết hàm truyền vào tham số là một chuỗi.. checkDate(dateString)
+    // Kiểm tra xem chuối nhập vào dateString có phải là định dạng của ngày tháng năm hay không ( dd/mm/yyyy)
+    // Nếu đúng return true, sai return false
+
+    let str = prompt('nhap gia tri cho chuoi');
+
+    function kiemTraDate(str) {
+        let arr = str.split('')
+        alert(arr)
+        if (arr.length !== 10) {
+            return false;
+        }
+        for (let i = 0; i < 10; i++) {
+            if (arr[2] !== "/" && arr[5] !== "/" && arr[i] % 2 !== 0 && arr[i] % 2 !== 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    alert(kiemTraDate(str))
+</script>
+</body>
+</html>

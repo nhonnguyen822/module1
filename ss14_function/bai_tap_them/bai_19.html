@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 19	Viết 1 hàm truyền vào 1 tham số (với tham số là một chuỗi), (checkString(str))
+    // Hàm trả về  một chuỗi là tất cả các ký tự in Hoa có trong chuỗi
+    // Ví dụ: Hello CoDeGym => HCDG
+
+    function traVeKyTuInHoa(str) {
+        let arr = str.split('');
+        let arrResult = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[i].toUpperCase() && arr[i] !== " ") {
+                arrResult.push(arr[i]);
+            }
+        }
+        return arrResult;
+    }
+
+    let str = prompt("nhap vao mot chuoi");
+    alert(traVeKyTuInHoa(str));
+</script>
+</body>
+</html>

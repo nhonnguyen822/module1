@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timPhanTuLon2(arr) {
+        let max = arr[0];
+        let arr1 = []
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < max) {
+                arr1.push(arr[i]);
+            }
+        }
+        let st2 = arr1[0]
+        for (let i = 1; i < arr1.length; i++) {
+            if (arr1[i] > st2) {
+                st2 = arr1[i];
+            }
+        }
+        let count = 0
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] === st2) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+
+    let arr = [1, 2, 3, 5, 8, 7, 9, 7, 5, 8, 8];
+    alert(timPhanTuLon2(arr));
+
+</script>
+</body>
+</html>

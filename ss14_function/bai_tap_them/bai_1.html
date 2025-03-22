@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1	Nhập 1 mảng từ bàn phím với độ dài n
+    // Hiện thị mảng sau khi thêm mới các phần tử
+    // Kiểm tra mảng vừa nhập. Nếu số phần tử chẵn bằng số phần
+    // tử lẻ thì hiện thị thông báo "OK", nếu không thoả mãn thì hiện thị "NO"
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhap gia tri cho mamg");
+    }
+    alert(arr);
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] % 2 === 0) {
+            count += 1;
+        }
+    }
+    if (count === arr.length / 2) {
+        alert("so phan tu chan bang so phan tu le");
+    } else {
+        alert("so phan tu chan khong bang so phan tu le");
+    }
+
+</script>
+</body>
+</html>

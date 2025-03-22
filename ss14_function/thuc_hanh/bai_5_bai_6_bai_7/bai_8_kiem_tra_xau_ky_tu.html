@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function chuanHoaChuoi(str) {
+        let arr = str.trim().toLowerCase().split('')
+        arr[0] = arr[0].toUpperCase();
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] === ' ' && arr[i + 1] !== " ") {
+                arr[i + 1] = arr[i + 1].toUpperCase();
+            }
+        }
+        return arr.join('');
+
+    }
+
+    function timKyTu(str) {
+        alert(str);
+        let arr = str.split(' ');
+        let max = arr[0].length;
+        let x = 0;
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i].length > max) {
+                max = arr[i];
+                x = i;
+            }
+        }
+        return arr[x];
+    }
+
+    let stri = prompt('nhap chuoi');
+    alert(timKyTu(chuanHoaChuoi(stri)));
+</script>
+</body>
+</html>
