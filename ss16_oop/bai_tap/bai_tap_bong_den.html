@@ -39,10 +39,13 @@
 
     let electricLamp = new ElectricLamp();
     let swichButton = new SwichButton(electricLamp);
-    swichButton.swichOff();
-    alert(electricLamp.status);
-    swichButton.swichOn();
-    alert(electricLamp.status);
+    for (let i = 0; i < 10; i++) {
+        swichButton.swichOff();
+        alert(electricLamp.status);
+        swichButton.swichOn();
+        alert(electricLamp.status);
+    }
+
 </script>
 </body>
 </html>
