@@ -8,9 +8,34 @@
 
 <p id="hienThi"></p>
 <script>
-    let arrChuaSanPham = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Readmi Note 4',
-        'Apple iPhone 6s', 'Xiaomi 5s Plus', 'Apple iPhone 8Plus', 'Fujitsu F-04E', 'Oppo A71'];
+    // let arrChuaSanPham = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Readmi Note 4',
+    //     'Apple iPhone 6s', 'Xiaomi 5s Plus', 'Apple iPhone 8Plus', 'Fujitsu F-04E', 'Oppo A71'];
+    let arrChuaSanPham = [];
 
+    class IPhone {
+        constructor(id, name, sl) {
+            this.id = id;
+            this.name = name;
+            this.sl = sl;
+        }
+        getID(){
+            return this.id
+        }
+        getName(){
+            return this.name
+        }
+        getSL(){
+            return this.sl
+        }
+    }
+
+    let iPhone1 = new IPhone(1, 'Sony Xperia', 2);
+    let iPhone2 = new IPhone(2, 'Samsung Galaxy', 2);
+    let iPhone3 = new IPhone(3, 'Nokia 6', 2);
+    let iPhone4 = new IPhone(4, 'Xiaomi Readmi Note 4', 2);
+    let iPhone5 = new IPhone(5, 'Apple iPhone 6s', 2);
+    let iPhone6 = new IPhone(6, 'Xiaomi 5s Plus', 2);
+    arrChuaSanPham.push(iPhone1, iPhone2, iPhone3, iPhone4, iPhone5, iPhone6,)
     let tableString;
 
     function hienThiTable() {
@@ -19,44 +44,47 @@
         tableString += `<button onclick="themSanPham()"> ADD</button>`
         tableString += `<table>`
         tableString += `<tr>`
-        tableString += `<th><h4>Product Name</h4></th>`
-        tableString += `<th><h4> ${arrChuaSanPham.length}Product</h4></th>`
+        tableString += `<th> ID</th>`
+        tableString += `<th>Name</th>`
+        tableString += `<th>Soluong</th>`
+        tableString += `<th colspan="3">${arrChuaSanPham.length}Product</th>`
         tableString += `<tr>`
         for (let i = 0; i < arrChuaSanPham.length; i++) {
             tableString += `<tr>`
-            tableString += `<td>${arrChuaSanPham[i]}</td>`
+            tableString += `<td>${arrChuaSanPham[i].getID()}</td>`
+            tableString += `<td>${arrChuaSanPham[i].name}</td>`
+            tableString += `<td>${arrChuaSanPham[i].sl}</td>`
             tableString += `<td><button onclick="thayDoiSanPham(${i})">Edit</button></td>`
             tableString += `<td><button onclick="xoaSanPham(${i})">Delete</button></td>`
             tableString += `<tr>`
         }
         tableString += `</table>`
-        document.getElementById("hienThi").innerHTML = tableString
+        document.getElementById("hienThi").innerHTML = tableString;
     }
 
+    hienThiTable();
+
     function themSanPham() {
-        let input = document.getElementById("name").value;
-        if (input === '') {
-            alert("vui long nhap san pham muon them");
-        } else {
-            arrChuaSanPham.push(input);
-        }
-        hienThiTable()
+        let name = document.getElementById("name").value;
+        let sl = +prompt('nhap so luong cua san pham');
+        let iPhone = new IPhone(arrChuaSanPham.length + 1, name, sl);
+        arrChuaSanPham.push(iPhone);
+        hienThiTable();
     }
 
     function xoaSanPham(index) {
-        let conf = confirm(`ban co thuc su muon xoa:${arrChuaSanPham[index]}khong?`);
+        let conf = confirm("ban co thuc su muon xoa");
         if (conf) {
-            arrChuaSanPham.splice(index, 1)
+            arrChuaSanPham.splice(index, 1);
         }
-        hienThiTable(arrChuaSanPham)
+        hienThiTable();
     }
 
     function thayDoiSanPham(index) {
-        arrChuaSanPham[index] = prompt(`ban muon thay doi${arrChuaSanPham[index]} thanh:`)
-        hienThiTable(arrChuaSanPham)
+        arrChuaSanPham[index].name = prompt("nhap ten muon thay doi");
+        arrChuaSanPham[index].sl = +prompt("nhap so luong san pham");
+        hienThiTable();
     }
-
-    hienThiTable()
 </script>
 
 </body>

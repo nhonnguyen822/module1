@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temprature {
+        constructor(doC) {
+            if (doC > -273) {
+                this.doC = doC;
+            } else {
+                alert(`nhap lai do C`);
+            }
+        }
+
+        setChangeCToF() {
+            let doF;
+            return doF = 9 / 5 * this.doC + 32;
+        }
+
+        setChangeCToK() {
+            let doK;
+            return doK = this.doC + 273.15;
+        }
+    }
+
+    let temprature1 = new Temprature(25);
+    document.write(temprature1.doC);
+    document.write(`chuyen thanh doF la:${temprature1.setChangeCToF()}<br>`);
+    document.write(`chuyen thanh doK la:${temprature1.setChangeCToK()}`);
+
+</script>
+</body>
+</html>

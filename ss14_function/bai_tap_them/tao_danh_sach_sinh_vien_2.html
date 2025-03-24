@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ok;
+    let studens = ['nguyen', 'nhon'];
+    while (true) {
+        let form = prompt(`.......Quan Ly Sinh Vien.......
+  Danh Sach Sinh Vien
+  1.Hien thi danh sach
+  2.Them sinh vien
+  3.Xoa sinh vien
+  4.Thoat chuong trinh`);
+        switch (form) {
+            case '1':
+                hienThiDS();
+                break;
+            case '2':
+                themSV();
+                break;
+            case '3':
+                xoaSV();
+                break;
+            case '4':
+                ok = confirm(`ban co thuc su muon thoat`);
+        }
+        if (form === '4' && ok === true) {
+            break;
+        }
+    }
+
+    function danhSachSV() {
+        let list = '';
+        for (let i = 0; i < studens.length; i++) {
+            list += `${i + 1}.${studens[i]} \n`;
+        }
+        return list;
+    }
+
+    function hienThiDS() {
+        alert("Danh sach SV:\n" +
+            `${danhSachSV()}`);
+    }
+
+    function themSV() {
+        let add = prompt("nhap ten sv");
+        if (add === "") {
+            alert('vui long nhap ten sv');
+        } else {
+            studens.push(add);
+        }
+        hienThiDS();
+    }
+
+    function xoaSV() {
+        if (studens.length === 0) {
+            alert("Da khong con SV nao");
+        } else {
+            let del = +prompt(`${danhSachSV()}`);
+            let conf = confirm("ban co thuc su muon xoa");
+            if (conf === true) {
+                studens.splice(del - 1, 1);
+                hienThiDS();
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

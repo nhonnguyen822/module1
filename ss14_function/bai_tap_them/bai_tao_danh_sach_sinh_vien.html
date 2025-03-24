@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ok;
+    let studens = ['nhon','nguyen','thanh'];
+    while (true) {
+        let form = prompt("...........Quan ly sinh vien..........\n" +
+            ".Danh Sach Sinh Vien.\n " +
+            " 1.Hien thi danh sach sinh vien\n" +
+            "2.Them sinh vien\n" +
+            "3 Xoa sinh vien\n" +
+            "4.Ket thuc chuong trinh\n ")
+        switch (form) {
+            case "1":
+                hienThiSinhVien();
+                break;
+            case "2":
+                themSinhVien();
+                break;
+            case "3":
+                xoaSinhVien();
+                break;
+            case "4":
+                ok = confirm('ban co thuc su muon thoat');
+
+        }
+        if (form === "4" && ok === true) {
+            break;
+        }
+    }
+
+    function danhSachSinhVien() {
+        let list = '';
+        for (let i = 0; i < studens.length; i++) {
+            list += `  ${i + 1} .${studens[i]} \n`;
+        }
+        return list;
+    }
+
+    function hienThiSinhVien() {
+        alert(`.....Danh Sach SV...\n
+        ${danhSachSinhVien()}`);
+    }
+
+    function themSinhVien() {
+        let tenSV = prompt("nhap ten sinh vien muon them");
+        if (tenSV === '') {
+            alert("vui long nhap ten sinh vien muon them");
+        } else {
+            studens.push(tenSV);
+        }
+    }
+
+    function xoaSinhVien() {
+        if (studens.length === 0) {
+            alert("Danh sach khong con sinh vien nao");
+        } else {
+            let del = prompt(` ${danhSachSinhVien()}`);
+            let conf = confirm("ban co thuc su muon xoa:");
+            if (conf === true) {
+                studens.splice(del - 1, 1);
+            }
+            hienThiSinhVien();
+        }
+
+    }
+</script>
+</body>
+</html>
