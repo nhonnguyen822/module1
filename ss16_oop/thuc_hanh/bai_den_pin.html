@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor() {
+            this.energy = 10
+        }
+
+        decreaseEnergy() {
+            this.energy -= 1;
+        }
+    }
+
+    class FlastLamp {
+        constructor() {
+            this.status = true;
+            this.battery = {};
+        }
+
+        light(battery) {
+            this.battery = battery;
+        }
+
+        turnOn() {
+            this.status = true;
+            this.light(battery);
+        }
+
+        turnOff() {
+            this.status = false;
+            this.light(battery);
+        }
+    }
+
+    let battery = new Battery();
+    let flastLamp = new FlastLamp();
+    flastLamp.light(battery)
+    flastLamp.turnOn();
+    flastLamp.turnOff();
+    alert(battery.energy);
+
+</script>
+</body>
+</html>

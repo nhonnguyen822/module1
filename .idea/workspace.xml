@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14_function/bai_tap/ung_dung_quan_ly_san_pham_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/bai_tap/ung_dung_quan_ly_san_pham_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_26.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_26.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_adam_eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_adam_eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_tap_bong_den.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_tap_bong_den.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,9 @@
       <workItem from="1742652261809" duration="738000" />
       <workItem from="1742697475006" duration="4171000" />
       <workItem from="1742719460999" duration="5041000" />
-      <workItem from="1742777426669" duration="21813000" />
+      <workItem from="1742777426669" duration="25989000" />
+      <workItem from="1742823080071" duration="981000" />
+      <workItem from="1742864792098" duration="10359000" />
     </task>
     <servers />
   </component>

@@ -45,6 +45,10 @@
             this.weight += 1;
             apple.decrease()
         }
+
+        say(text) {
+            alert(`${text}`)
+        }
     }
 
     let apple1 = new Apple()
@@ -55,11 +59,13 @@
             adam.eatApple(apple1);
             alert(`can nang cua Adam la:${adam.getWeight()}`);
             alert(`trong  luong con lai cua qua tao la:${apple1.weight}`);
+            adam.say(`toi luot ban eva`);
         }
         if (eva.checkApple(apple1.weight)) {
             eva.eatApple(apple1);
             alert(`can nang cua Eva la:${eva.getWeight()}`);
             alert(`trong  luong con lai cua qua tao la:${apple1.weight}`);
+            eva.say(`toi luot ban adam`);
         }
     }
 

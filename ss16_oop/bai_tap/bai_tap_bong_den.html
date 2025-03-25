@@ -13,17 +13,23 @@
 
         turnOff() {
             this.status = false;
+            alert(`den tat`)
         }
 
         turnOn() {
             this.status = true;
+            alert(`den sang`)
         }
     }
 
     class SwichButton {
-        constructor(lamp) {
+        constructor() {
             this.status = true;
-            this.lamp = lamp;
+            this.lamp;
+        }
+
+        lamp(lamp) {
+            return this.lamp = lamp
         }
 
         swichOff() {
@@ -38,12 +44,11 @@
     }
 
     let electricLamp = new ElectricLamp();
-    let swichButton = new SwichButton(electricLamp);
+    let swichButton = new SwichButton();
+    swichButton.lamp(electricLamp);
     for (let i = 0; i < 10; i++) {
         swichButton.swichOff();
-        alert(electricLamp.status);
         swichButton.swichOn();
-        alert(electricLamp.status);
     }
 
 </script>
