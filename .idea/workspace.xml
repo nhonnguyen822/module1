@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_adam_eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_adam_eva.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_tap_bong_den.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_tap_bong_den.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,33 +35,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.Unnamed.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.bai_26.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.bai_3.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.bai_tap_them_bai_3.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.ham_so_nhi_phan.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.luyen_tap_mang_1_bai_4.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.luyen_tap_mang_1_bai_7.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.thuc_hanh_bai_ca_ro.html.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/codegym/module1/ss14_function/bai_tap_them/bai_26.html&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Unnamed.executor": "Debug",
+    "JavaScript Debug.bai_26.html.executor": "Debug",
+    "JavaScript Debug.bai_3.html.executor": "Debug",
+    "JavaScript Debug.bai_so_nt_mang_2_chieu.html.executor": "Debug",
+    "JavaScript Debug.bai_tap_them_bai_3.html.executor": "Debug",
+    "JavaScript Debug.ham_so_nhi_phan.html.executor": "Debug",
+    "JavaScript Debug.luyen_tap_mang_1_bai_4.html.executor": "Debug",
+    "JavaScript Debug.luyen_tap_mang_1_bai_7.html.executor": "Debug",
+    "JavaScript Debug.thuc_hanh_bai_ca_ro.html.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/codegym/module1/study/bai_tap/bai_so_nt_mang_2_chieu.html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="bai_26.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/module1/ss14_function/bai_tap_them/bai_26.html" useBuiltInWebServerPort="true">
+    <configuration name="bai_so_nt_mang_2_chieu.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/module1/study/bai_tap/bai_so_nt_mang_2_chieu.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
   </component>
@@ -144,6 +143,10 @@
       <workItem from="1742777426669" duration="25989000" />
       <workItem from="1742823080071" duration="981000" />
       <workItem from="1742864792098" duration="10359000" />
+      <workItem from="1742894618923" duration="2035000" />
+      <workItem from="1742982054894" duration="2740000" />
+      <workItem from="1742985775310" duration="14801000" />
+      <workItem from="1743036021548" duration="31707000" />
     </task>
     <servers />
   </component>

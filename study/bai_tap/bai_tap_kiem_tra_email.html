@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt(`nhap chuoi `);
+
+    function kiemTraEmail(str) {
+        if (str.length < 6) {
+            return false;
+        }
+        let arr = str.split('');
+        let viTriACong = str.indexOf(`@`);
+        let viTriDauCham = str.indexOf(`.`);
+        let cheackViTriAC = arr.length - viTriACong
+        if (viTriACong === 0 || cheackViTriAC > 10 + viTriACong) {
+            return false;
+        }
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == '@') {
+                count++;
+            }
+        }
+        if (count > 1) {
+            return false;
+        }
+        let checkViTriCham = viTriDauCham - viTriACong
+        if (checkViTriCham < 3) {
+            return false;
+        }
+        alert(arr)
+        for (let i = viTriACong; i < arr.length; i++) {
+            if (arr[i] !== arr[i].toLowerCase() && !isNaN(arr[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    alert(kiemTraEmail(str));
+
+</script>
+</body>
+</html>

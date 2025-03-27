@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getCustomerRank(sotien) {
+        let rank
+        let discount;
+        let freeShipping;
+        let gift;
+        if (sotien < 100) {
+            rank = `Bronze`;
+            discount = `Khong co uu dai`;
+            freeShipping = `khong mien phi giao hang`
+            gift = `khong co qua tang vip`;
+        } else if (sotien < 499) {
+            rank = `silver`;
+            discount = `giam 5% tren don hang tiep theo`;
+            freeShipping = `khong mien phi giao hang`
+            gift = `khong co qua tang vip`;
+        } else if (sotien < 999) {
+            rank = `gold`;
+            discount = `giam 10% `;
+            freeShipping = `mien phi giao hang`
+            gift = `khong co qua tang vip`;
+        } else {
+            rank = `platinum`;
+            discount = `giam 20%`;
+            freeShipping = `mien phi giao hang`
+            gift = `co qua tang vip`;
+        }
+        return {rank, discount, freeShipping, gift};
+    }
+
+    let soTien = prompt(`nhap so tien cua khach hang`);
+    let khachhang = getCustomerRank(soTien)
+    alert(khachhang.rank);
+    alert(khachhang.discount);
+    alert(khachhang.freeShipping);
+    alert(khachhang.gift);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function chuyenSoThanhChu(num) {
+        let str = num.toString();
+        let arr = str.split("");
+        let result = "";
+        let arrChuSo = [`khong`, `mot`, `hai`, `ba`, `bon`, `nam`, `sau`, `bay`, `tam`, `chin`];
+        for (let i = 0; i < arr.length; i++) {
+            result += `${arrChuSo[arr[i]]} `;
+        }
+        return result;
+    }
+
+    let num = parseInt(prompt('nhap so'));
+    alert(chuyenSoThanhChu(num));
+</script>
+</body>
+</html>

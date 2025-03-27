@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    do {
+        n = +prompt('nhap so nguyen duong n');
+    } while (n < 0 || n > 999);
+
+    function docSoThanhChu(num) {
+        let str = num.toString();
+        let arr = str.split("");
+        let arrChuSo = [`le`, `mot`, `hai`, `ba`, `bon`, `nam`, `sau`, `bay`, `tam`, `chin`];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.length === 1) {
+                alert(arrChuSo[arr[i]]);
+                break;
+            }
+            if (arr.length === 2) {
+                if (arr[i] + arr[i + 1] == 10) {
+                    alert(`muoi`);
+                    break;
+                } else if (arr[i] + arr[i + 1] > 10 && arr[i] + arr[i + 1] < 20) {
+                    alert(`muoi ${arrChuSo[arr[i + 1]]}`);
+                    break;
+                } else if (arr[1] == 0) {
+                    alert(`${arrChuSo[arr[0]]} muoi`);
+                    break;
+                } else {
+                    alert(`${arrChuSo[arr[0]]} muoi ${arrChuSo[arr[1]]}`);
+                    break;
+                }
+            } else {
+                if (arr[1] == 0 && arr[2] == 0) {
+                    alert(`${arrChuSo[arr[0]]} tram`);
+                    break;
+                } else if (arr[1] == 1) {
+                    alert(`${arrChuSo[arr[0]]} tram muoi ${arrChuSo[arr[2]]}`);
+                    break;
+                } else if (arr[1] == 0) {
+                    alert(`${arrChuSo[arr[0]]} tram linh ${arrChuSo[arr[2]]}`);
+                    break;
+                } else if (arr[2] == 0) {
+                    alert(`${arrChuSo[arr[0]]} tram ${arrChuSo[arr[1]]} muoi`);
+                    break;
+                } else {
+                    alert(`${arrChuSo[arr[0]]} tram ${arrChuSo[arr[1]]} muoi ${arrChuSo[arr[2]]}`);
+                    break;
+                }
+
+            }
+
+        }
+    }
+
+    docSoThanhChu(n);
+
+
+</script>
+</body>
+</html>

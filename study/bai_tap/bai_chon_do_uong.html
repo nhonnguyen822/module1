@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let conf;
+    let form;
+    let tongTien = 0;
+    let arrDanhSachDoUong = ['Cafe', `Cam Vắt`, `Nước Ép Cà Rốt`, `Nước ép cà chua`, `Nước loc`, `Nước Dừa`];
+    while (true) {
+        form = prompt(` Danh Sach Do Uong
+     1.Cafe     :10k
+     2.Cam Vắt     :12k
+     3.Nước Ép Cà Rốt     :15k
+     4.Nước ép cà chua     :15k
+     5.Nước loc     :5k
+     6.Nước Dừa     :13k
+     7.OutMenu
+     ......TổngTien:${tongTien}k VND `)
+
+        switch (form) {
+            case "1":
+                chonDoUong(10);
+                break;
+            case "2":
+                chonDoUong(12);
+                break;
+            case "3":
+                chonDoUong(15);
+                break;
+            case "4":
+                chonDoUong(15);
+                break;
+            case "5":
+                chonDoUong(5);
+                break;
+            case "6":
+                chonDoUong(13);
+                break;
+            case "7":
+                conf = confirm(`ban da chon xong do uong?`);
+                break;
+        }
+        if (+form === 7 && conf === true) {
+            break;
+        }
+    }
+
+    function chonDoUong(donGIA) {
+        let sl = prompt(`${arrDanhSachDoUong[+form - 1]} :${donGIA} k;
+        nhap so luong ban muon mua`);
+        tongTien += (donGIA * sl);
+    }
+</script>
+</body>
+</html>

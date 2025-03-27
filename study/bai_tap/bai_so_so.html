@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <div><input type="number" id="num1" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="num2" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="num3" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="num4" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="num5" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="num6" style=" width: 30px;height: 10px;border-radius: 5px;">
+    </div>
+    <div><input type="number" id="kt1" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="kt2" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="kt3" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="kt4" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="kt5" style=" width: 30px;height: 10px;border-radius: 5px;">
+        <input type="number" id="kt6" style=" width: 30px;height: 10px;border-radius: 5px;">
+    </div>
+    <input type="button" value="mua ve">
+    <input type="button" value="xem ket qua">
+</form>
+<script>
+    let veSo = function () {
+        let num1;
+        let num2;
+        let num3;
+        let num4;
+        let num5;
+        let num6;
+        let veSo;
+        let muaVe = +prompt(` ban co 2 lua chon
+    1.ban muon tu chon so
+    2.he thong tu random`);
+        if (muaVe === 1) {
+            do {
+                num1 = document.getElementById('num1').value = prompt(`moi ban nhap 2 so thu 1`);
+            } while (document.getElementById('num1').value.length !== 2);
+            do {
+                num2 = document.getElementById('num2').value = prompt(`moi ban nhap 2 so thu 2`);
+            } while (document.getElementById('num2').value.length !== 2);
+            do {
+                num3 = document.getElementById('num3').value = prompt(`moi ban nhap 2 so thu 3`);
+            } while (document.getElementById('num3').value.length !== 2);
+            do {
+                num4 = document.getElementById('num4').value = prompt(`moi ban nhap 2 so thu 4`);
+            } while (document.getElementById('num4').value.length !== 2);
+            do {
+                num5 = document.getElementById('num5').value = prompt(`moi ban nhap 2 so thu 5`);
+            } while (document.getElementById('num5').value.length !== 2);
+            do {
+                num6 = document.getElementById('num6').value = prompt(`moi ban nhap 2 so thu 6`);
+            } while (document.getElementById('num6').value.length !== 2);
+        } else if (muaVe === 2) {
+            num1 = document.getElementById(`num1`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+            num2 = document.getElementById(`num2`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+            num3 = document.getElementById(`num3`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+            num4 = document.getElementById(`num4`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+            num5 = document.getElementById(`num5`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+            num6 = document.getElementById(`num6`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+        }
+        veSo = `${num1};${num2};${num3};${num4};${num5};${num6};`
+
+
+        return {num1, num2, num3, num4, num5, num6, veSo};
+    }
+
+    let xemKetQua = function (veSo) {
+        let kq;
+        let kq1 = document.getElementById(`kt1`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+        let kq2 = document.getElementById(`kt2`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+        let kq3 = document.getElementById(`kt3`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+        let kq4 = document.getElementById(`kt4`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+        let kq5 = document.getElementById(`kt5`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+        let kq6 = document.getElementById(`kt6`).value = `${Math.floor(Math.random() * (99-10+1))+10}`;
+        // let kq1 = document.getElementById(`kt1`).value = prompt("nhap so1");
+        // let kq2 = document.getElementById(`kt2`).value = prompt("nhap so1");
+        // let kq3 = document.getElementById(`kt3`).value = prompt("nhap so1");
+        // let kq4 = document.getElementById(`kt4`).value = prompt("nhap so1");
+        // let kq5 = document.getElementById(`kt5`).value = prompt("nhap so1");
+        // let kq6 = document.getElementById(`kt6`).value = prompt("nhap so1");
+        if (veSo.num1 === kq1 && veSo.num2 === kq2 && veSo.num3 === kq3 && veSo.num4 === kq4 && veSo.num5 === kq5 && veSo.num6 === kq6) {
+            kq = `chuc mung ban da trung giai nhat`;
+        } else if (veSo.num6 === kq6 && veSo.num2 === kq2 && veSo.num3 === kq3 && veSo.num4 === kq4 && veSo.num5 === kq5) {
+            kq = `chuc mung ban da trung giai nhi`;
+        } else if (veSo.num3 === kq3 && veSo.num4 === kq4 && veSo.num5 === kq5 && veSo.num6 === kq6) {
+            kq = `chung mung ban trung giai khuyen khich`;
+        } else {
+            kq = `chuc ban may man lan sau`;
+        }
+        return {kq1, kq2, kq3, kq4, kq5, kq6, kq};
+    }
+    let khachHang2 = veSo();
+    alert(khachHang2.veSo)
+    khachHang2=xemKetQua(veSo);
+    alert(khachHang2.kq)
+
+
+</script>
+</body>
+</html>

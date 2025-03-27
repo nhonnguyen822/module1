@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = +prompt("nhap so m");
+    let n = +prompt("nhap so n");
+    let tong = 0;
+    let arr = new Array(m);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(n);
+        for (let j = 0; j < arr[i].length; j++) {
+            arr[i][j] = +prompt("nhap cac gia tri cho ma tran");
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] % 2 === 0) {
+                tong += arr[i][j];
+            }
+        }
+    }
+    alert(tong);
+</script>
+</body>
+</html>

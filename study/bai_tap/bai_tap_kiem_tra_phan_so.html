@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrPhanTu = [];
+    let arrPhanMau = [];
+    for (let i = 0; i < 3; i++) {
+        arrPhanTu[i] = +prompt("nhap so nguyen gia tri phan tu");
+    }
+    for (let i = 0; i < 3; i++) {
+        arrPhanMau[i] = +prompt("nhap so nguyen gia tri phan tu");
+    }
+    let phanSoMax = arrPhanTu[0] / arrPhanMau[0];
+    let maxIndex = 0;
+    for (let i = 1; i < arrPhanTu.length; i++) {
+        if (arrPhanTu[i] / arrPhanMau[i] > phanSoMax) {
+            phanSoMax = arrPhanTu[i] / arrPhanMau[i];
+            maxIndex = i;
+        }
+    }
+    alert(`phan so lon nhat la:${arrPhanTu[maxIndex]}/${arrPhanMau[maxIndex]}co chi so la:${maxIndex}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA = [];
+    let arrB = [];
+    for (let i = 0; i < 5; i++) {
+        arrA[i] = +prompt("nhap gia tri cho mang A");
+    }
+    for (let i = 0; i < 5; i++) {
+        arrB[i] = +prompt("nhap gia tri cho mang B");
+    }
+    let arrResult = [];
+    for (let i = 0; i < arrB.length; i++) {
+        if (arrA.includes(arrB[i]) && !arrResult.includes(arrB[i])) {
+            arrResult.push(arrB[i]);
+        }
+    }
+    document.write(`ket qua:${arrResult}`);
+</script>
+</body>
+</html>
