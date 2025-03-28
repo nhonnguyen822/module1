@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="table"></p>
+<script>
+    class MayTinh {
+        constructor(ma, ten, hangsx, gia) {
+            this.ma = ma;
+            this.ten = ten;
+            this.hangsx = hangsx;
+            this.gia = gia;
+        }
+
+        getMa() {
+            return this.ma;
+        }
+
+        getTen() {
+            return this.ten;
+        }
+
+        getHangSX() {
+            return this.hangsx;
+        }
+
+        getGia() {
+            return this.gia;
+        }
+
+        setMa(ma) {
+            this.ma = ma;
+        }
+
+        setTen(ten) {
+            this.ma = ten;
+        }
+
+        setHangSX(hangsx) {
+            this.ma = hangsx;
+        }
+
+        setGia(gia) {
+            this.ma = gia;
+        }
+
+        thongTinMay() {
+            return `ma :${this.ma}:
+            ten:${this.ten}
+            hangSX:${this.hangsx}
+            gia:${this.gia}`;
+        }
+    }
+
+    let mayTinh1 = new MayTinh(1, "LAP1", "LG", 18000000);
+    let mayTinh2 = new MayTinh(2, "LAP2", "LG", 17000000);
+    let mayTinh3 = new MayTinh(3, "LAP3", "LG", 15000000);
+    let mayTinh4 = new MayTinh(4, "LAP4", "LG", 16000000);
+    let arr = [];
+    arr.push(mayTinh1, mayTinh2, mayTinh3, mayTinh4);
+    arr.sort((a, b) => {
+        return a.gia - b.gia;
+    })
+    let tableToString = `<table border="1">`;
+    tableToString += `<tr>`;
+    tableToString += `<th>Ma</th>`;
+    tableToString += `<th>Ten</th>`
+    tableToString += `<th>HangSX</th>`;
+    tableToString += `<th>Gia</th>`;
+    tableToString += `</tr>`;
+    for (let i = 0; i < arr.length; i++) {
+        tableToString += `<tr>`;
+        tableToString += `<td>${arr[i].ma}</td>`;
+        tableToString += `<td>${arr[i].ten}</td>`;
+        tableToString += `<td>${arr[i].hangsx}</td>`;
+        tableToString += `<td>${arr[i].gia}</td>`;
+        tableToString += `</tr>`;
+    }
+    tableToString += `<table>`;
+    document.getElementById(`table`).innerHTML = tableToString;
+</script>
+</body>
+</html>

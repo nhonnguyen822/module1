@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraKyTu(str) {
+        let arr = str.split('');
+        if (arr.length === 0) {
+            return [0, 0];
+        }
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[i].toUpperCase()) {
+                count++;
+            }
+        }
+        return `chuoi co ${count}ky tu in hoa va ${arr.length - count}ky tu in thuong`;
+    }
+
+    let str = prompt('nhap mot chuoi');
+    alert(kiemTraKyTu(str));
+</script>
+</body>
+</html>

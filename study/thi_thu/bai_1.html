@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n;
+    do {
+        n = +prompt(`nhap n so phan tu trong mang`);
+    } while (n < 0 || n > 50);
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("nhap cac gia tri cho mang");
+    }
+    alert(arr);
+    let sumLe = 0;
+    let sumChan = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 === 0) {
+            sumChan += arr[i];
+        } else {
+            sumLe += arr[i];
+        }
+    }
+    alert(`result:tong gia tri vi tri le ${sumLe} va tong gia tri cac vi tri chan la${sumChan}`);
+</script>
+</body>
+</html>

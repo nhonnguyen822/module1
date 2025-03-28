@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arrResult = [];
+    let n = +prompt(`nhap so phan tu cho mang`);
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt('nhap gia tri cac phan tu cho mang');
+    }
+
+    function timFibonaci(arr) {
+        let f0 = 0;
+        let f1 = 1;
+        let arrKiemTra = [0, 1];
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        for (let i = 2; i < max; i++) {
+            let fi = f0 + f1;
+            arrKiemTra.push(fi);
+            f0 = f1;
+            f1 = fi;
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arrKiemTra.includes(arr[i])) {
+                arrResult.push(arr[i]);
+            }
+        }
+        return arrResult.sort((a, b) => a - b);
+
+    }
+    alert(timFibonaci(arr));
+</script>
+</body>
+</html>
