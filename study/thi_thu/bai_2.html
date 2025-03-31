@@ -11,13 +11,16 @@
         if (arr.length === 0) {
             return [0, 0];
         }
-        let count = 0;
+        let chuThuong = 0;
+        let chuHoa = 0;
         for (let i = 0; i < arr.length; i++) {
-            if (arr[i] === arr[i].toUpperCase()) {
-                count++;
+            if (arr[i] === arr[i].toUpperCase() && isNaN(arr[i])) {
+                chuHoa++;
+            } else if (arr[i] === arr[i].toLowerCase() && isNaN(arr[i])) {
+                chuThuong++;
             }
         }
-        return `chuoi co ${count}ky tu in hoa va ${arr.length - count}ky tu in thuong`;
+        return `chuoi co ${chuHoa}ky tu in hoa va ${chuThuong}ky tu in thuong`;
     }
 
     let str = prompt('nhap mot chuoi');

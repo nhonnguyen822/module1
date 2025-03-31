@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/bai_tap/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/bai_tap/bai_3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study/bai_tap/bai_so_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/bai_tap/bai_so_so.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/thi_thu/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/thi_thu/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/thi_thu/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/thi_thu/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/thi_thu/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/thi_thu/bai_4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/codegym/module1/study/bai_tap/bai_so_nt_mang_2_chieu.html&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/kiem_tra&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -63,7 +67,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="bai_so_nt_mang_2_chieu.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/module1/study/bai_tap/bai_so_nt_mang_2_chieu.html" useBuiltInWebServerPort="true">
+    <configuration name="bai_3.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/module1/study/bai_tap/bai_3.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
   </component>
@@ -149,11 +153,25 @@
       <workItem from="1742985775310" duration="14801000" />
       <workItem from="1743036021548" duration="32802000" />
       <workItem from="1743124569474" duration="10561000" />
-      <workItem from="1743144504288" duration="5117000" />
+      <workItem from="1743144504288" duration="9261000" />
+      <workItem from="1743210024934" duration="1020000" />
+      <workItem from="1743249395824" duration="8864000" />
+      <workItem from="1743305284162" duration="2000" />
+      <workItem from="1743305430816" duration="1760000" />
+      <workItem from="1743382117847" duration="3762000" />
+      <workItem from="1743389999758" duration="76000" />
+      <workItem from="1743408389523" duration="1744000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression="arrResult" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

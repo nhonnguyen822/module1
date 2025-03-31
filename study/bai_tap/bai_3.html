@@ -6,12 +6,26 @@
 </head>
 <body>
 <script>
-    let arrResult = [];
-    let sum = ''
-    let arr = ["eat", "tea", "tan", "ate", "nat", "bat"];
-    for (let i = 0; i < arr.length; i++) {
-
+    let mangKetQua = [];
+    let mang = ["eat", "tea", "tan", "ate", "nat", "bat"];
+    for (let i = 0; i < mang.length; i++) {
+        let tuChung = mang[i].split("").sort().join("")
+        let kiemtra = false;
+        for (let j = 0; j < mangKetQua.length; j++) {
+            if (mangKetQua[j][0] === tuChung) {
+                mangKetQua[j].push(mang[i])
+                kiemtra = true;
+                break;
+            }
+        }
+        if (kiemtra === false) {
+            mangKetQua.push([tuChung, mang[i]]);
+        }
     }
+    for (let i = 0; i < mangKetQua.length; i++) {
+        mangKetQua[i].shift();
+    }
+    alert(mangKetQua);
 </script>
 </body>
 </html>

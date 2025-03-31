@@ -9,53 +9,53 @@
 <script>
     class MayTinh {
         constructor(ma, ten, hangsx, gia) {
-            this.ma = ma;
-            this.ten = ten;
-            this.hangsx = hangsx;
-            this.gia = gia;
+            this._ma = ma;
+            this._ten = ten;
+            this._hangsx = hangsx;
+            this._gia = gia;
         }
 
-        getMa() {
-            return this.ma;
+        get ma() {
+            return this._ma;
         }
 
-        getTen() {
-            return this.ten;
+        set ma(value) {
+            this._ma = value;
         }
 
-        getHangSX() {
-            return this.hangsx;
+        get ten() {
+            return this._ten;
         }
 
-        getGia() {
-            return this.gia;
+        set ten(value) {
+            this._ten = value;
         }
 
-        setMa(ma) {
-            this.ma = ma;
+        get hangsx() {
+            return this._hangsx;
         }
 
-        setTen(ten) {
-            this.ma = ten;
+        set hangsx(value) {
+            this._hangsx = value;
         }
 
-        setHangSX(hangsx) {
-            this.ma = hangsx;
+        get gia() {
+            return this._gia;
         }
 
-        setGia(gia) {
-            this.ma = gia;
+        set gia(value) {
+            this._gia = value;
         }
 
         thongTinMay() {
-            return `ma :${this.ma}:
-            ten:${this.ten}
-            hangSX:${this.hangsx}
-            gia:${this.gia}`;
+            return `ma :${this._ma}:
+            ten:${this._ten}
+            hangSX:${this._hangsx}
+            gia:${this._gia}`;
         }
     }
 
-    let mayTinh1 = new MayTinh(1, "LAP1", "LG", 18000000);
+    let mayTinh1 = new MayTinh(1, "LAP1", "LG", 189000000);
     let mayTinh2 = new MayTinh(2, "LAP2", "LG", 17000000);
     let mayTinh3 = new MayTinh(3, "LAP3", "LG", 15000000);
     let mayTinh4 = new MayTinh(4, "LAP4", "LG", 16000000);
@@ -64,23 +64,41 @@
     arr.sort((a, b) => {
         return a.gia - b.gia;
     })
-    let tableToString = `<table border="1">`;
-    tableToString += `<tr>`;
-    tableToString += `<th>Ma</th>`;
-    tableToString += `<th>Ten</th>`
-    tableToString += `<th>HangSX</th>`;
-    tableToString += `<th>Gia</th>`;
-    tableToString += `</tr>`;
-    for (let i = 0; i < arr.length; i++) {
+    hienThiBang()
+
+    function hienThiBang() {
+        let tableToString = `<table border="1">`;
+        tableToString += `<tr>`
+        tableToString += `<th><button onclick="themSanPham()">Them</button></th>`
+        tableToString += `</tr>`
         tableToString += `<tr>`;
-        tableToString += `<td>${arr[i].ma}</td>`;
-        tableToString += `<td>${arr[i].ten}</td>`;
-        tableToString += `<td>${arr[i].hangsx}</td>`;
-        tableToString += `<td>${arr[i].gia}</td>`;
+        tableToString += `<th>Ma</th>`;
+        tableToString += `<th>Ten</th>`
+        tableToString += `<th>HangSX</th>`;
+        tableToString += `<th>Gia</th>`;
         tableToString += `</tr>`;
+        for (let i = 0; i < arr.length; i++) {
+            tableToString += `<tr>`;
+            tableToString += `<td>${arr[i].ma}</td>`;
+            tableToString += `<td>${arr[i].ten}</td>`;
+            tableToString += `<td>${arr[i].hangsx}</td>`;
+            tableToString += `<td>${arr[i].gia}</td>`;
+            tableToString += `</tr>`;
+        }
+        tableToString += `<table>`;
+        document.getElementById(`table`).innerHTML = tableToString;
     }
-    tableToString += `<table>`;
-    document.getElementById(`table`).innerHTML = tableToString;
+
+
+    function themSanPham() {
+        let ma = +prompt('nhap ma san pham');
+        let ten = prompt('nhap ten san pham');
+        let hangSX = prompt("nhap hang san xuat");
+        let gia = +prompt(`nhap gia san pham`);
+        let sanPhamMoi = new MayTinh(ma, ten, hangSX, gia);
+        arr.push(sanPhamMoi)
+        hienThiBang()
+    }
 </script>
 </body>
 </html>
