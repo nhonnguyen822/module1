@@ -9,24 +9,42 @@
     // Bài tập 12	Viết hàm truyền vào tham số là một chuỗi.. checkDate(dateString)
     // Kiểm tra xem chuối nhập vào dateString có phải là định dạng của ngày tháng năm hay không ( dd/mm/yyyy)
     // Nếu đúng return true, sai return false
+    let str = `12/11/20.3`
 
-    let str = prompt('nhap gia tri cho chuoi');
-
-    function kiemTraDate(str) {
-        let arr = str.split('')
-        alert(arr)
-        if (arr.length !== 10) {
-            return false;
-        }
-        for (let i = 0; i < 10; i++) {
-            if (arr[2] !== "/" && arr[5] !== "/" && arr[i] % 2 !== 0 && arr[i] % 2 !== 1) {
-                return false;
+    function kiemTra(str) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === "/") {
+                count++;
             }
         }
-        return true;
+        if (count !== 2) {
+            return false;
+        }
+        let arr = str.split("/")
+        if (arr.length !== 3) {
+            return false;
+        }
+        let day = arr[0]
+        let thang = arr[1];
+        let year = arr[2];
+        if (isNaN(day) || isNaN(thang) || isNaN(year)) {
+            return false
+        }
+        if (year % 2 !== 0 || year % 2 !== 1) {
+            return false
+        }
+        if (thang < 1 || thang > 12) {
+            return false
+        }
+        let dayInMonth = new Date(year, thang, 0).getDate()
+        if (day < 1 || day > dayInMonth) {
+            return false
+        }
+        return true
     }
 
-    alert(kiemTraDate(str))
+    alert(kiemTra(str))
 </script>
 </body>
 </html>

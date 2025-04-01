@@ -16,11 +16,19 @@
     let str = prompt("nhap mot chuoi");
 
     function traVeKyTuVietTat(str) {
+        str.trim()
         str.toLowerCase();
         let arrResult = [];
         let arr = str.split(' ');
         if (arr.length === 1) {
             return arr[0];
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === '') {
+                arr.splice(i, 1);
+                i--
+            }
+
         }
         for (let i = 0; i < arr.length; i++) {
             for (let j = 0; j < 1; j++) {
@@ -29,6 +37,7 @@
         }
         return arrResult;
     }
+
     alert(traVeKyTuVietTat(str));
 </script>
 </body>

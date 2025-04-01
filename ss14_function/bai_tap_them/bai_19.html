@@ -11,10 +11,17 @@
     // Ví dụ: Hello CoDeGym => HCDG
 
     function traVeKyTuInHoa(str) {
+        str.trim()
         let arr = str.split('');
         let arrResult = [];
         for (let i = 0; i < arr.length; i++) {
-            if (arr[i] === arr[i].toUpperCase() && arr[i] !== " ") {
+            if (arr[i] === ' ') {
+                arr.splice(i, 1);
+                i--
+            }
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[i].toUpperCase()) {
                 arrResult.push(arr[i]);
             }
         }

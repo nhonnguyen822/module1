@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function chuyenHoa(str, rule) {
+        str.trim();
+        let arr = str.split(' ');
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === '') {
+                arr[i].splice(i, 1);
+                i--;
+            }
+        }
+
+        if (rule === "snack-case") {
+            if(arr[0].slice(0,1)==='$'||isNaN(arr[0].slice(0,1))||!isNaN(arr[0].slice(0,1))){
+
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    let mang = [];
+    do {
+        n = +prompt("nhap so luong phan tu cho mang");
+    } while (n > 10 || n <= 0 || parseInt(n) !== n || n === "");
+    for (let i = 0; i < n; i++) {
+        do {
+            mang[i] = +prompt("nhap cac gia tri cho mang");
+        } while (mang[i] === '' || isNaN(mang[i]) || parseInt(mang[i]) !== mang[i]);
+    }
+
+    function timKiem(mang) {
+        let mangChung = [];
+        let sl = [];
+        for (let i = 0; i < mang.length; i++) {
+            if (!mangChung.includes(mang[i])) {
+                mangChung.push(mang[i]);
+            }
+        }
+        for (let i = 0; i < mangChung.length; i++) {
+            let dem = 0;
+            for (let j = 0; j < mang.length; j++) {
+                if (mangChung[i] === mang[j]) {
+                    dem++
+                }
+            }
+            sl.push(dem);
+        }
+        let soLonNhat = sl[0];
+        let viTriLonNhat = 0;
+        for (let i = 1; i < sl.length; i++) {
+            if (sl[i] > soLonNhat) {
+                soLonNhat = sl[i];
+                viTriLonNhat = i;
+            }
+            if (sl[i] === soLonNhat && mangChung[i] < mangChung[viTriLonNhat]) {
+                viTriLonNhat = i;
+            }
+        }
+        alert(`so co nhieu tan so nhat la:${mangChung[viTriLonNhat]}`);
+    }
+    timKiem(mang);
+
+</script>
+</body>
+</html>

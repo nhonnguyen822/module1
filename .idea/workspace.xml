@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="be34e307-4b17-40d5-b977-616db0df5574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/bai_tap/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/bai_tap/bai_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/bai_tap/bai_so_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/bai_tap/bai_so_so.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/thi_thu/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/thi_thu/bai_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/thi_thu/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/thi_thu/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_12.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_17.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_19.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/bai_tap_them/bai_19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/bai_tap/bai_tap_kiem_tra_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/bai_tap/bai_tap_kiem_tra_email.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study/thi_thu/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/thi_thu/bai_4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/kiem_tra&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/bai_thi&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -160,7 +160,12 @@
       <workItem from="1743305430816" duration="1760000" />
       <workItem from="1743382117847" duration="3762000" />
       <workItem from="1743389999758" duration="76000" />
-      <workItem from="1743408389523" duration="1744000" />
+      <workItem from="1743408389523" duration="6868000" />
+      <workItem from="1743418465561" duration="3959000" />
+      <workItem from="1743489546992" duration="136000" />
+      <workItem from="1743492160565" duration="6733000" />
+      <workItem from="1743505981247" duration="458000" />
+      <workItem from="1743508510091" duration="3413000" />
     </task>
     <servers />
   </component>
